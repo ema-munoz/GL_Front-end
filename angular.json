@@ -103,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "GL_Front-end"
+  "defaultProject": "GL_Front-end",
+  "cli": {
+    "analytics": "080a310e-15fe-4df2-897e-42b6b854e6bb"
+  }
 }
