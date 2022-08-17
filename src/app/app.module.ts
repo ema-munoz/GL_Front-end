@@ -9,12 +9,22 @@ import { ListSubjectComponent } from './subjects/list-subject/list-subject.compo
 
 //external
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LoginComponent } from './login/login.component';
+import { BotonesComponent } from './botones/botones.component';
+//import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateSubjectComponent,
-    ListSubjectComponent
+    ListSubjectComponent,
+    HomeComponent,
+    ForgotPasswordComponent,
+    LoginComponent,
+    BotonesComponent,
+    //NavbarComponent
   ],
   imports: [
     BrowserModule,

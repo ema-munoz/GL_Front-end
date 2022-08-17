@@ -1,4 +1,4 @@
-#fondo{
+#fondo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -7,21 +7,22 @@
   top: 0%;
 }
 
-#fondo img{
+#fondo img {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#contenedor{
+#contenedor {
   background-color: #8f8e8ea9;
   position: absolute;
   width: 100%;
   height: 100%;
+  align-content: center;
 }
 
-input{
+input {
   text-align: center;
   font-style: italic;
   border-radius: 20px;
@@ -30,23 +31,12 @@ input{
   width: 100%;
 }
 
-input:focus{
-  border-bottom: 6px solid  #004aad;
-}
-
-button{
-  background-color: #004aad;
-  position: absolute;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 20px;
-  color: white;
-  display: block;
-  font-weight: bold;
+input:focus {
+  border-bottom: 6px solid #004aad;
 }
 
 body,
-a{
+a {
   font-size: 20px;
   font-weight: bold;
   width: 100%;
@@ -63,22 +53,206 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
-label{
+label {
   text-align: left;
   color: white;
 }
 
-img{
+img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
 }
 
+/*  BOTONES  */
+button {
+  background-color: black;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  width: 125px;
+  border-radius: 20px;
+  color: white;
+  border-color: transparent;
+}
+
+#botonImportar button,
+#botonExportar button,
+#botonPlantilla button,
+#botonCrearNuevo button,
+#botonVerMas button,
+#botonGuardar button,
+#botonEliminar button,
+#botonVolver button,
+#botonEditar button,
+#botonBuscar button {
+    text-align: right;
+}
+
+#iconoBotonImportar,
+#iconoBotonExportar,
+#iconoBotonPlantilla,
+#iconoBotonCrearNuevo,
+#iconoBotonVerMas,
+#iconoBotonGuardar,
+#iconoBotonEliminar,
+#iconoBotonVolver,
+#iconoBotonEditar,
+#iconoBotonBuscar {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 32.5px;
+  max-height: 32.5px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+#iconoBotonImportar img,
+#iconoBotonExportar img,
+#iconoBotonPlantilla img,
+#iconoBotonCrearNuevo img,
+#iconoBotonVerMas img,
+#iconoBotonGuardar img,
+#iconoBotonEliminar img,
+#iconoBotonVolver img,
+#iconoBotonEditar img,
+#iconoBotonBuscar img {
+  border-radius: 50%;
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+}
+
+#botonImportar button,
+#botonVerMas button,
+#botonEditar button,
+#botonBuscar button{
+  border-right: 3px solid transparent;
+  background-color: #4a7fbd;
+}
+
+#botonVerMas button {
+  border-right: 6px solid transparent;
+}
+
+#iconoBotonImportar,
+#iconoBotonVerMas,
+#iconoBotonEditar,
+#iconoBotonBuscar {
+  background-color: #004aad;
+}
+
+#botonExportar button,
+#botonVolver button {
+  border-right: 6px solid transparent;
+  background-color: #e49b2e;
+}
+
+#botonVolver button,
+#botonEditar button,
+#botonBuscar button {
+  border-right: 15px solid transparent;
+}
+
+#iconoBotonExportar,
+#iconoBotonVolver {
+  background-color: #eb8c00;
+}
+
+#botonPlantilla button {
+  border-right: 10px solid transparent;
+  background-color: #cd1df1;
+}
+
+#iconoBotonPlantilla {
+  background-color: #5700ad;
+}
+
+#botonCrearNuevo button,
+#botonGuardar button {
+  border-right: 13px solid transparent;
+  background-color: #4cbd4a;
+}
+
+#botonGuardar button {
+  border-right: 7px solid transparent;
+}
+
+#iconoBotonCrearNuevo,
+#iconoBotonGuardar {
+  background-color: #1e7c1d;
+}
+
+#botonEliminar button {
+  border-right: 10px solid transparent;
+  background-color: #ff1616;
+}
+
+#iconoBotonEliminar {
+  background-color: #dd3535;
+}
+
+
+
+
+
+
+
+
+/*@media (max-width: 1200px) {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  button{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  button{
+    font-size: 22.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  button{
+    font-size: 20px;
+  }
+}
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
