@@ -8,7 +8,6 @@ import { LoginComponent } from './login/login.component';
 
 /* Teacher */
 import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
-import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
 /* Matter */
@@ -47,13 +46,12 @@ import { EditLocationComponent } from './location/edit-location/edit-location.co
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, canActivate:[ExpenseGuard]},
-  {path: 'botones', component: BotonesComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'forgotPassword', component: ForgotPasswordComponent},
+  {path: 'botones', component: BotonesComponent, canActivate:[ExpenseGuard]},
+  {path: 'login', component: LoginComponent, canActivate:[ExpenseGuard]},
+  {path: 'forgotPassword', component: ForgotPasswordComponent, canActivate:[ExpenseGuard]},
   /* Teachers  */
   {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
-  {path: 'view-teachers', component: ViewTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'edit-teachers', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
 
   /*Subjects*/
@@ -92,9 +90,9 @@ const routes: Routes = [
   {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent, canActivate:[ExpenseGuard]},
 
   /*Location*/
-  {path: 'create-location', component: CreateLocationComponent},
-  {path: 'list-location', component: ListLocationComponent},
-  {path: 'edit-location', component: EditLocationComponent},
+  {path: 'create-location', component: CreateLocationComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-location', component: ListLocationComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-location', component: EditLocationComponent, canActivate:[ExpenseGuard]},
 ];
 
 @NgModule({

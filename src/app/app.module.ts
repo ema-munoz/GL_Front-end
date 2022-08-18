@@ -18,7 +18,7 @@ import { BotonesComponent } from './botones/botones.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
-import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
+
 /* Matter */
 import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
 import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
@@ -66,7 +66,6 @@ import { CreateLocationComponent } from './location/create-location/create-locat
     ListTeachersComponent,
     CreateTeachersComponent,
     EditTeachersComponent,
-    ViewTeachersComponent,
     CreateMatterComponent,
     ListMatterComponent,
     EditMatterComponent,
