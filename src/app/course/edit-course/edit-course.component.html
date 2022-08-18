@@ -1,79 +1,62 @@
 <div id="contenedor">
 
     <div id="tituloGeneral">
-        <h2>Editar Curso</h2>
+        <h2>{{title}}</h2>
     </div>
 
-    <div id="nombre">
-        <label>Nombre</label>
-        <input type="nombre" name="" required>
-    </div>
+    <form [formGroup]="myForm" (ngSubmit)="store()">
+        <div id="nombre" class="field">
+            <label for="name">Nombre</label>
+            <input pInputText type="text" formControlName="name">
+            <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
+        </div>
 
-    <div id="numero">
-        <label>Numeros de Maquinas</label>
-        <input type="numero" name="" required>
-    </div>
+        <div id="number" class="field">
+            <label for="number">Siglas</label>
+            <input pInputText type="text" name="" formControlName="number">
+            <i *ngIf="numberField.valid" class="pi pi-check-circle"></i>
+        </div>
+        
+        <div id="semesters">
+            <label for="semesters">Numero de Semestres</label>
+            <input type="number" name="" formControlName="semesters">
+            <i *ngIf="semestersField.valid" class="pi pi-check-circle"></i>
+        </div>
 
-    <div>
-        <label for="semestres" id="semestresName">Numero de Semestres</label>
-        <select id="semestres" name="semestres">
-            <option value=""></option>
-            <option value="uno">1</option>
-            <option value="dos">2</option>
-            <option value="tres">3</option>
-            <option value="cuatro">4</option>
-            <option value="cinco">5</option>
-        </select>
-    </div>
-    <div>
-        <label for="paralelo" id="paralelolName"></label>
-        <h5 id="nparalelo">Paralelo</h5>
-        <select id="paralelo" name="paralelo">
-            <option value=""></option>
-            <option value="uno">A</option>
-            <option value="dos">B</option>
-            <option value="tres">C</option>
-        </select>
-    </div>
-    <div>
-        <label for="shift" id="shiftName"></label>
-        <h5 id="njornada">Jornada</h5>
-        <select id="shift" name="shift">
-          <option value=""></option>
-          <option value="matutina">Matutina</option>
-          <option value="vespertina">Vespertina</option>
-          <option value="nocturna">Nocturna</option>
-        </select>
-      </div>
-      <div>
-        <label for="teacher" id="teacherName"></label>
-        <h5 id="ndocente">Docente</h5>
-        <select id="teacher" name="teacher">
-          <option value=""></option>
-          <option value="yougledis herrera">Yougledis Herrera</option>
-          <option value="vespertina">Maritza Tituaña</option>
-          <option value="nocturna">Mauricio Tamayo</option>
-          <option value="nocturna">Geovanny Pazmiño</option>
-          <option value="nocturna">Lorena Chulde</option>
-        </select>
-      </div>
+        <div id="career">
+            <label for="career">Numero de Semestres</label>
+            <input type="number" name="" formControlName="career">
+            <i *ngIf="careerField.valid" class="pi pi-check-circle"></i>
+        </div>
+
+        <div id="parallel">
+            <label for="parallel">Numero de Semestres</label>
+            <input type="number" name="" formControlName="parallel">
+            <i *ngIf="parallelField.valid" class="pi pi-check-circle"></i>
+        </div>
+
+        <div id="shift">
+            <label for="shift">Numero de Semestres</label>
+            <input type="number" name="" formControlName="shift">
+            <i *ngIf="shiftField.valid" class="pi pi-check-circle"></i>
+        </div>
     
-   
+        <div id="botonGuardar" >
+            <button type="submit">
+                <div id="iconoBotonGuardar">
+                    <img src="../../assets/img/icons/white/save.png">
+                </div>Guardar
+            </button>
+        </div>
 
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
-    </div>
-
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
+        <div id="botonCancelar">
+            <button type="submit">
+                <a routerLink="/list-carrer">
+                <div id="iconoBotonCancelar">
+                    <img src="../../assets/img/icons/white/cross.png">
+                </div>Cancelar</a>
+            </button>
+        </div>
+        </form>
 
 </div>
