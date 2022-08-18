@@ -16,14 +16,14 @@ import { BotonesComponent } from './botones/botones.component';
 
 /* Teachers */
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
-
-
-import { ListMatterComponent } from './matter/list-matter/list-matter.component';
-
 import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
 import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
+/* Matter */
 import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
+import { ListMatterComponent } from './matter/list-matter/list-matter.component';
+
 
 //import { NavbarComponent } from './navbar/navbar.component';
 
@@ -42,6 +42,7 @@ import { CreateMatterComponent } from './matter/create-matter/create-matter.comp
     ViewTeachersComponent,
     CreateMatterComponent,
     ListMatterComponent,
+    EditMatterComponent,
     //NavbarComponent
   ],
   imports: [

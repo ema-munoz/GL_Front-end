@@ -8,27 +8,13 @@
   }
   #tituloGeneral {
     margin-right: 580px;
-    margin-top: 45px;
+    margin-top: 35px;
   }
   #botonCrearNuevo{
     position: absolute;
     left: 725px;
-    top: 120px;
+    top: 130px;
   }
-  #botonExportar{
-    position: absolute;
-    left: 870px;
-    top: 120px;
-  }
-  #botonPlantilla{
-    position: absolute;
-    left: 725px;
-    top: 170px;
-  }
-  #botonImportar{
-    position: absolute;
-    left: 870px;
-    top: 170px;
-  }
+  
 
   
