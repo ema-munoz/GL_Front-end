@@ -1,0 +1,31 @@
+#contenedor{
+  border: 15px solid #004aad;
+  border-radius: 2.5%;
+  max-width: 80%;
+  max-height: 70%;
+  left: 10%;
+  top: 20%;
+}
+
+#tituloGeneral {
+  background-color: #8f8e8e;
+  border: 5px solid #004aad;
+  height: 10%;
+  width: 20%;
+  position: absolute;
+  top: 4%;
+  left: 40%;
+}
+
+#tabla{
+  background-color: #ececec;
+  width: 94%;
+  height: 75%;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+
+#botonEditarP {
+  left: 85%;
+}

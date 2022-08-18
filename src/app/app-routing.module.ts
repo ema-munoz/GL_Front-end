@@ -5,6 +5,21 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { ExpenseGuard } from './guards/auth.guards';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+
+/* Teacher */
+import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
+import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
+import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
+import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
+/* Matter */
+import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
+import { ListMatterComponent } from './matter/list-matter/list-matter.component';
+/* Carrer */
+import { CreateCarrerComponent } from './carrer/create-carrer/create-carrer.component';
+import { EditCarrerComponent } from './carrer/edit-carrer/edit-carrer.component';
+import { ListCarrerComponent } from './carrer/list-carrer/list-carrer.component';
+
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -13,6 +28,21 @@ const routes: Routes = [
   {path: 'botones', component: BotonesComponent},
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
+  /* Teachers  */
+  {path: 'create-teachers', component: CreateTeachersComponent},
+  {path: 'list-teachers', component: ListTeachersComponent},
+  {path: 'view-teachers', component: ViewTeachersComponent},
+  {path: 'edit-teachers', component: EditTeachersComponent},
+  /*Matter*/
+  {path: 'create-matter', component: CreateMatterComponent},
+  {path: 'list-matter', component: ListMatterComponent},
+  {path: 'edit-matter', component: EditMatterComponent},
+  /*Carrer*/
+  {path: 'create-carrer', component: CreateCarrerComponent},
+  {path: 'list-carrer', component: ListCarrerComponent},
+  {path: 'edit-carrer', component: EditCarrerComponent},
+
+
   //{path: 'navbar', component: NavbarComponent},
   /*{path: 'navbar',
   loadChildren: ()=>
