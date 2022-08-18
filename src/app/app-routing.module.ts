@@ -38,21 +38,27 @@ import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/ed
 import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
 import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
+
+import { LogoutComponent } from './logout/logout.component';
+//import { NavbarComponent } from './navbar/navbar.component';
+
 /*location*/
 import { ListLocationComponent } from './location/list-location/list-location.component';
 import { CreateLocationComponent } from './location/create-location/create-location.component';
 import { EditLocationComponent } from './location/edit-location/edit-location.component';
 
+
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, canActivate:[ExpenseGuard]},
   {path: 'botones', component: BotonesComponent, canActivate:[ExpenseGuard]},
-  {path: 'login', component: LoginComponent, canActivate:[ExpenseGuard]},
-  {path: 'forgotPassword', component: ForgotPasswordComponent, canActivate:[ExpenseGuard]},
+  {path: 'login', component: LoginComponent},
+  {path: 'forgotPassword', component: ForgotPasswordComponent},
   /* Teachers  */
+
   {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
-  {path: 'edit-teachers', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-teachers/:id', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
 
   /*Subjects*/
   {path: 'create-subject', component: CreateMatterComponent, canActivate:[ExpenseGuard]},

@@ -7,7 +7,7 @@ import { TeachersModel } from '../models/teacher.model';
 @Injectable({
   providedIn: 'root'
 })
-export class TeaherHttpService {
+export class TeacherHttpService {
   navigate(arg0: any[]) {
     throw new Error('Method not implemented.');
   }

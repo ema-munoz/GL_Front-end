@@ -19,9 +19,9 @@ export class CreateCarrerComponent implements OnInit {
     private careerHttpService: CareerHttpService,
     private router: ActivatedRoute,
     private formBuilder: FormBuilder,
-    private route:Router,
-    ) {
-      this.myForm = this.newForm();
+    private route: Router,
+  ) {
+    this.myForm = this.newForm();
   }
 
   ngOnInit(): void {
@@ -37,12 +37,12 @@ export class CreateCarrerComponent implements OnInit {
   }
 
 
- 
+
 
   store() {
 
     this.careerHttpService.store(this.myForm.value).subscribe(
-      (result) => {}
+      response => { this.route.navigate(['list-carrer']); }
     );
   }
 

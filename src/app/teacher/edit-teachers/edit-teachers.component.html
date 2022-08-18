@@ -1,41 +1,54 @@
 <div id="contenedor">
 
   <div id="tituloGeneral">
-    <h1>Editar Docente</h1>
+    <h1>{{title}}</h1>
   </div>
 
-  <div id="formulario">
-    <div id="cedula">
-      <label>Cédula</label>
-      <input type="text" placeholder="Escriba su número de cédula.">
-    </div>
+  <form [formGroup]="myForm">
+    <div id="formulario">
+      <div id="cedula" class="field">
+        <label for="identificationCard">Cédula</label>
+        <input pInputText type="text" placeholder="Escriba su número de cédula." formControlName="identificationCard">
+        <p-message *ngIf="identificationCardField.errors?.['required']" severity="error"
+          text="Este campo es obligatorio"></p-message>
+        <i *ngIf="identificationCardField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="nombre">
-      <label>Nombre:</label>
-      <input type="text" placeholder="Escriba su nombres.">
-    </div>
+      <div id="nombre" class="field">
+        <label for="names">Nombres:</label>
+        <input pInputText type="text" placeholder="Escriba su nombres." formControlName="names">
+      </div>
 
-    <div id="apellido">
-      <label>Apellidos:</label>
-      <input type="text" placeholder="Escriba su apellidos.">
-    </div>
+      <div id="apellido" class="field">
+        <label for="surnames">Apellidos:</label>
+        <input pInputText type="text" placeholder="Escriba su apellidos." formControlName="surnames">
+      </div>
 
-    <div id="correo">
-      <label>Correo Institucional:</label>
-      <input type="text" placeholder="Escriba su correo institucional.">
-    </div>
+      <div id="correo" class="field">
+        <label for="institutionalEmail">Correo Institucional:</label>
+        <input type="email" placeholder="Escriba su correo institucional." formControlName="institutionalEmail">
+      </div>
 
-    <div id="telefono">
-      <label>Teléfono:</label>
-      <input type="text" placeholder="Escriba su teléfono.">
-    </div>
+      <div id="telefono" class="field">
+        <label for="phone">Teléfono:</label>
+        <input type="tel" placeholder="Escriba su teléfono." formControlName="phone">
+      </div>
 
-    <div id="botonGuardar">
+      <div id="botonGuardar" (click)="update()">
+        <button type="submit">
+          <div id="iconoBotonGuardar">
+            <img src="../../assets/img/icons/white/save.png">
+          </div>Guardar
+        </button>
+      </div>
+    </div>
+    <div id="botonCancelar">
+      <a routerLink="/list-teachers">
       <button type="submit">
-        <div id="iconoBotonGuardar">
-          <img src="../../assets/img/icons/white/save.png">
-        </div>Guardar
-      </button>
+        <div id="iconoBotonCancelar">
+          <img src="../../assets/img/icons/white/cross.png">
+        </div>Cancelar
+      </button></a>
     </div>
-  </div>
+</form>
 </div>
