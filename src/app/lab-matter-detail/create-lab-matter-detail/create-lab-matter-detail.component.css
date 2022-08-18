@@ -1,0 +1,71 @@
+#contenedor {
+    border: 15px solid #004aad;
+    border-radius: 5%;
+    max-width: 60%;
+    max-height: 95%;
+    left: 20.5%;
+    top: 12%;
+  }
+  #tituloGeneral {
+    position: absolute;
+    right: 580px;
+    top: 45px;
+  }
+  
+  #titulo {
+    width: 48%;
+    top: 20%;
+    left: 26%;
+  }
+  #nombre {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+  }
+  #siglas {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 80%;
+  }
+  #botonGuardar{
+    position: absolute;
+    left: 715px;
+    top: 610px;
+  }
+  #botonCancelar{
+    position: absolute;
+    left: 890px;
+    top: 610px;
+  }
+  #teacher{
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #ndocente{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #dias{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#ndias{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border-radius: 60%;
+}
