@@ -6,7 +6,7 @@
   <form [formGroup]="myForm">
     <div id="nombre" class="field">
       <label for="name">Nombre</label>
-      <input pInputText id="name" type="text" name="" formControlName="name">
+      <input pInputText id="name" type="text" formControlName="name">
       <p-message *ngIf="nameField.errors?.['required']" severity="error" text="Este campo es obligatorio">
       </p-message>
       <p-message *ngIf="nameField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
@@ -16,8 +16,8 @@
     </div>
     <br>
     <div id="carrerName">
-      <label for="carrerName">Carrera</label>
-      <input pInputText id="carrerName" type="text" name="carrerName" formControlName="carrerName">
+      <label for="career">Carrera</label>
+      <input pInputText id="carrerName" type="text" formControlName="career">
       <p-message *ngIf="careerField.errors?.['required']" severity="error" text="Este campo es obligatorio">
       </p-message>
       <p-message *ngIf="careerField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
