@@ -1,8 +1,5 @@
-export class Subject {
+export interface Subject {
     id?: number;
     name: string;
-
-    constructor(name: string) {
-        this.name = name;
-    }
+    authdata?: string
 }
