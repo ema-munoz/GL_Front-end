@@ -14,7 +14,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { LoginComponent } from './login/login.component';
 import { BotonesComponent } from './botones/botones.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
-import { CreateMatterComponent } from './create-matter/create-matter.component';
+import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { ListMatterComponent } from './matter/list-matter/list-matter.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CreateMatterComponent } from './create-matter/create-matter.component';
     BotonesComponent,
     ListTeachersComponent,
     CreateMatterComponent,
+    ListMatterComponent,
     //NavbarComponent
   ],
   imports: [

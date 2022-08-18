@@ -1,6 +1,33 @@
-#contenedor{
-    max-width: 60%;
-    max-height: 70%;
-    left: 20%;
-    top: 20%;
-  }
+#contenedor {
+  border: 15px solid #004aad;
+  border-radius: 5%;
+  max-width: 60%;
+  max-height: 85%;
+  left: 20.5%;
+  top: 12%;
+}
+#tituloGeneral {
+  position: absolute;
+  right: 580px;
+  top: 45px;
+  font-size: medium;
+}
+
+#titulo {
+  width: 48%;
+  top: 20%;
+  left: 26%;
+}
+#email {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+}
+
+#password {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+}

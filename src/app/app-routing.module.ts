@@ -5,7 +5,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { HomeComponent } from './home/home.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { LoginComponent } from './login/login.component';
-import { CreateMatterComponent } from './create-matter/create-matter.component';
+import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { ListMatterComponent } from './matter/list-matter/list-matter.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'forgotPassword', component: ForgotPasswordComponent},
   {path: 'list-teachers', component: ListTeachersComponent},
   {path: 'create-matter', component: CreateMatterComponent},
+  {path: 'list-matter', component: ListMatterComponent},
   //{path: 'navbar', component: NavbarComponent},
   /*{path: 'navbar',
   loadChildren: ()=>
