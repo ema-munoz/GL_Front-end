@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SubjectModel } from 'src/app/models/subject.model';
 import { SubjectHttpService } from 'src/app/services/subject.service';
 
@@ -14,7 +15,9 @@ export class CreateMatterComponent implements OnInit {
   myForm: FormGroup;
   constructor(
     private subjectHttpService: SubjectHttpService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private route: Router,
+
   ) {
     this.myForm = this.newForm();
   }
@@ -43,7 +46,7 @@ export class CreateMatterComponent implements OnInit {
 
   create() {
     this.subjectHttpService.create(this.myForm.value).subscribe(
-      (response) => { }
+      (response) => { this.route.navigate(['list-subject']);}
     );
   }
 

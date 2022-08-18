@@ -21,7 +21,7 @@ export class EditLaboratoryComponent implements OnInit {
     private formBuilder: FormBuilder,
     private route:Router,
   ) {
-     this.myForm = this.newForm();
+    this.myForm = this.newForm();
   }
 
   ngOnInit(): void {

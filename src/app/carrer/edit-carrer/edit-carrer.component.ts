@@ -21,7 +21,7 @@ export class EditCarrerComponent implements OnInit {
     private formBuilder: FormBuilder,
     private route:Router,
   ) {
-     this.myForm = this.newForm();
+    this.myForm = this.newForm();
   }
 
   ngOnInit(): void {
@@ -70,7 +70,7 @@ export class EditCarrerComponent implements OnInit {
       
     );
   }
- 
+
 
   store() {
 
