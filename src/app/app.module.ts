@@ -90,7 +90,6 @@ import { ListLocationComponent } from './location/list-location/list-location.co
     CreateLabMatterDetailComponent,
     ListLabMatterDetailComponent,
     ListLocationComponent,
-    //NavbarComponent
   ],
   imports: [
     BrowserModule,
