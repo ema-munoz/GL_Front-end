@@ -54,8 +54,8 @@ const routes: Routes = [
   {path: 'botones', component: BotonesComponent, canActivate:[ExpenseGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
-  /* Teachers  */
 
+  /* Teachers  */
   {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'edit-teachers/:id', component: EditTeachersComponent, canActivate:[ExpenseGuard]},

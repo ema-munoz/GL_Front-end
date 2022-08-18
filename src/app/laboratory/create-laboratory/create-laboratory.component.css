@@ -1,64 +1,57 @@
 #contenedor {
-    border: 15px solid #004aad;
-    border-radius: 5%;
-    max-width: 60%;
-    max-height: 85%;
-    left: 20.5%;
-    top: 12%;
-  }
-  #tituloGeneral {
-    position: absolute;
-    right: 580px;
-    top: 45px;
-  }
+  border: 15px solid #004aad;
+  border-radius: 5%;
+  max-width: 60%;
+  max-height: 85%;
+  left: 20.5%;
+  top: 12%;
+}
 
-  #titulo {
-    width: 48%;
-    top: 20%;
-    left: 26%;
-  }
-  #nombre {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    width: 80%;
-  }
-  #capacidad {
-    position: absolute;
-    top: 42%;
-    left: 10%;
-    width: 80%;
-  }
+#tituloGeneral {
+  position: absolute;
+  right: 580px;
+  top: 45px;
+}
 
-  #estadoLaboratorio{
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    width: 100%;
+#titulo {
+  width: 48%;
+  top: 20%;
+  left: 26%;
+}
 
-  }
-
-  /* #estadoLaboratorio select {
-  text-align: center;
-  font-style: italic;
-  border-radius: 20px;
-  border-bottom: 6px solid coral;
-  transition: all .5s ease;
+#nombre {
+  position: absolute;
+  top: 25%;
+  left: 10%;
   width: 80%;
-} */
+}
+
+#capacidad {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  width: 80%;
+}
+
+#estadoLaboratorio {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 100%;
+}
 
 select:focus {
   border-bottom: 6px solid #004aad;
 }
-  #botonGuardar{
-    position: absolute;
-    left: 550px;
-    top: 550px;
-  }
-  #botonCancelar{
-    position: absolute;
-    left: 400px;
-    top: 550px;
-  }
 
+#botonGuardar {
+  position: absolute;
+  left: 550px;
+  top: 550px;
+}
 
+#botonCancelar {
+  position: absolute;
+  left: 400px;
+  top: 550px;
+}

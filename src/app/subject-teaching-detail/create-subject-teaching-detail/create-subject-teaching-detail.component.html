@@ -1,99 +1,100 @@
 <div id="contenedor">
 
-    <div id="tituloGeneral">
-        <h4>Crear Detalle Docente Materia</h4>
-    </div>
+  <div id="tituloGeneral">
+    <h4>Crear Detalle Docente Materia</h4>
+  </div>
 
+  <div id="formulario">
     <div id="fecha">
-        <label>fecha</label>
-        <input type="date" name="" required>
+      <label>fecha</label>
+      <input type="date" name="" required>
     </div>
 
-    <div>
-        <label for="dias" id="diasName"></label>
-        <h5 id="ndias">Dia</h5>
-        <select id="dias" name="dias">
-            <option value=""></option>
-            <option value="Lunes">Lunes</option>
-            <option value="Martes">Martes</option>
-            <option value="Miercoles">Miercoles</option>
-            <option value="Jueves">Jueves</option>
-            <option value="Viernes">Viernes</option>
-        </select>
+    <div id="dia">
+      <label for="dias" id="diasName"></label>
+      <h5 id="ndias">Dia</h5>
+      <select id="dias" name="dias">
+        <option value=""></option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miercoles">Miercoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+      </select>
     </div>
 
     <div id="horaInicio">
-        <label>hora Inicio</label>
-        <input type="time" name="" required>
-    </div>
-    
-    <div id="horaFin">
-        <label>hora Fin</label>
-        <input type="time" name="" required>
+      <label>hora Inicio</label>
+      <input type="time" name="" required>
     </div>
 
-    <div>
-        <label for="curso" id="cursoName">Curso</label>
-        <select id="curso" name="curso">
-            <option value=""></option>
-            <option value="quinto a">Quinto A</option>
-            <option value="quinto b">Quinto B</option>
-            <option value="quinto n">Quinto C</option>
-        </select>
+    <div id="horaFin">
+      <label>hora Fin</label>
+      <input type="time" name="" required>
     </div>
-    <div>
-    
-        <label for="teacher" id="teacherName"></label>
-        <h5 id="ndocente">Docente</h5>
-        <select id="teacher" name="teacher">
-          <option value=""></option>
-          <option value="yougledis herrera">Yougledis Herrera</option>
-          <option value="vespertina">Maritza Tituaña</option>
-          <option value="nocturna">Mauricio Tamayo</option>
-          <option value="nocturna">Geovanny Pazmiño</option>
-          <option value="nocturna">Lorena Chulde</option>
-        </select>
-      </div>
-       
-      <div>
-        <label for="asignatura" id="asignaturalName"></label>
-        <h5 id="nasignatura">Asignatura</h5>
-        <select id="asignatura" name="asignatura">
-            <option value=""></option>
-            <option value="uno">Tendecias Actuales de Programacion</option>
-            <option value="dos">Redes y Conectividad</option>
-            <option value="tres">Etica Profesional</option>
-            <option value="tres">Emprendimiento</option>
-        </select>
+
+    <div id="cursos">
+      <label for="curso" id="cursoName">Curso</label>
+      <select id="curso" name="curso">
+        <option value=""></option>
+        <option value="quinto a">Quinto A</option>
+        <option value="quinto b">Quinto B</option>
+        <option value="quinto n">Quinto C</option>
+      </select>
     </div>
-    
-    <div>
-        <label for="detalle" id="detalleName"></label>
-        <h5 id="ndetalle">Detalle Laboratorio Detalle Docente</h5>
-        <select id="detalle" name="detalle">
-          <option value=""></option> <!--campo en blanco no mover-->
-          <option value=""></option>
-          <option value=""></option> <!--ver que campo va aqui-->
-          <option value=""></option>
-        </select>
-      </div>
-      <div> 
-    
-   
+
+    <div id="docente">
+      <label for="teacher" id="teacherName"></label>
+      <h5 id="ndocente">Docente</h5>
+      <select id="teacher" name="teacher">
+        <option value=""></option>
+        <option value="yougledis herrera">Yougledis Herrera</option>
+        <option value="vespertina">Maritza Tituaña</option>
+        <option value="nocturna">Mauricio Tamayo</option>
+        <option value="nocturna">Geovanny Pazmiño</option>
+        <option value="nocturna">Lorena Chulde</option>
+      </select>
+    </div>
+
+    <div id="asignaturas">
+      <label for="asignatura" id="asignaturalName"></label>
+      <h5 id="nasignatura">Asignatura</h5>
+      <select id="asignatura" name="asignatura">
+        <option value=""></option>
+        <option value="uno">Tendecias Actuales de Programacion</option>
+        <option value="dos">Redes y Conectividad</option>
+        <option value="tres">Etica Profesional</option>
+        <option value="tres">Emprendimiento</option>
+      </select>
+    </div>
+
+    <div id="detalleDocente">
+      <label for="detalle" id="detalleName"></label>
+      <h5 id="ndetalle">Detalle Laboratorio Detalle Docente</h5>
+      <select id="detalle" name="detalle">
+        <option value=""></option>
+        <!--campo en blanco no mover-->
+        <option value=""></option>
+        <option value=""></option>
+        <!--ver que campo va aqui-->
+        <option value=""></option>
+      </select>
+    </div>
 
     <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
+      <button type="submit">
+        <div id="iconoBotonGuardar">
+          <img src="../../assets/img/icons/white/save.png">
+        </div>Guardar
+      </button>
     </div>
 
     <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
+      <button type="submit">
+        <div id="iconoBotonCancelar">
+          <img src="../../assets/img/icons/white/cross.png">
+        </div>Cancelar
+      </button>
     </div>
+  </div>
 </div>
