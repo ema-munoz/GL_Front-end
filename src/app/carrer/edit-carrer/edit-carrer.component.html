@@ -6,18 +6,35 @@
     <form [formGroup]="myForm" >
         <div id="nombre" class="field">
             <label for="name">Nombre</label>
-            <input pInputText id="name" type="nombre" name="" formControlName="name">
+            <input pInputText id="name" type="text" name="" formControlName="name">
+            <p-message *ngIf="nameField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="nameField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="nameField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres"></p-message>
+            <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
         </div>
         <br>
         <div id="siglas">
             <label for="acronym">Siglas</label>
-            <input pInputText id="name" type="siglas" name="acronym" formControlName="acronym">
+            <input pInputText id="name" type="text" name="acronym" formControlName="acronym">
+            <p-message *ngIf="acronymField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="acronymField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="acronymField.errors?.['maxlength']" severity="error" text="Máximo 5 caracteres"></p-message>
+            <i *ngIf="acronymField.valid" class="pi pi-check-circle"></i>
 
         </div>
         <br>
-        <div id="semestres">
-            <label>Fecha de las Clases</label>
-            <input type="number" name="" required>
+        <div id="semestres" class="field">
+            <label for="semesters">Numero de Semestres</label>
+            <input pInputText type="number" name="" formControlName="semesters">
+            <p-message *ngIf="semestersField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="semestersField.errors?.['min']" severity="error" text="Minimo 1"></p-message>
+        <p-message *ngIf="semestersField.errors?.['max']" severity="error" text="Maximo 10"></p-message>
+            <i *ngIf="semestersField.valid" class="pi pi-check-circle"></i>
         </div>
 
         <div id="botonGuardar" (click)="update()">

@@ -33,7 +33,7 @@ export class CreateTeachersComponent implements OnInit {
       identificationCard:[null, [Validators.required, Validators.minLength(2), Validators.maxLength(11)]],
       names: [null, [Validators.required, Validators.minLength(2)]],
       surnames: [null, [Validators.required, Validators.minLength(2)]],
-      institutionalEmail: [null, [ Validators.email]],
+      institutionalEmail: [null, [ Validators.required, Validators.email]],
       phone: [null, [ Validators.minLength(2), Validators.maxLength(20)]],
     })
   }
@@ -68,7 +68,7 @@ export class CreateTeachersComponent implements OnInit {
   }
 
   get phoneField() {
-    return this.myForm.controls['phoneEmail'];
+    return this.myForm.controls['phone'];
   }
 
 }

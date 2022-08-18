@@ -58,7 +58,7 @@ export class CreateCarrerComponent implements OnInit {
     return this.myForm.controls['acronym'];
   }
 
-  get semesterField() {
+  get semestersField() {
     return this.myForm.controls['semesters'];
   }
 

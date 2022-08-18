@@ -4,47 +4,75 @@
     <h1>{{title}}</h1>
   </div>
   <form [formGroup]="myForm" (ngSubmit)="store()">
-  <div id="formulario" >
-    <div id="cedula" class="field">
-      <label for="identificationCard">Cédula</label>
-      <input type="text" placeholder="Escriba su número de cédula." formControlName="identificationCard">
-    </div>
+    <div id="formulario">
+      <div id="cedula" class="field">
+        <label for="identificationCard">Cédula</label>
+        <input type="text" placeholder="Escriba su número de cédula." formControlName="identificationCard">
+        <p-message *ngIf="identificationCardField.errors?.['required']" severity="error"
+          text="Este campo es obligatorio">
+        </p-message>
+        <p-message *ngIf="identificationCardField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+        </p-message>
+        <p-message *ngIf="identificationCardField.errors?.['maxlength']" severity="error" text="Máximo 11 caracteres">
+        </p-message>
+        <i *ngIf="identificationCardField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="nombre" class="field">
-      <label for="names">Nombres:</label>
-      <input type="text" placeholder="Escriba su nombres." formControlName="names">
-    </div>
+      <div id="nombre" class="field">
+        <label for="names">Nombres:</label>
+        <input type="text" placeholder="Escriba su nombres." formControlName="names">
+        <p-message *ngIf="namesField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+        </p-message>
+        <p-message *ngIf="namesField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+        </p-message>
+        <i *ngIf="namesField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="apellido" class="field">
-      <label for="surnames">Apellidos:</label>
-      <input type="text" placeholder="Escriba su apellidos." formControlName="surnames">
-    </div>
+      <div id="apellido" class="field">
+        <label for="surnames">Apellidos:</label>
+        <input type="text" placeholder="Escriba su apellidos." formControlName="surnames">
+        <p-message *ngIf="surnamesField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+        </p-message>
+        <p-message *ngIf="surnamesField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+        </p-message>
+        <i *ngIf="surnamesField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="correo" class="field">
-      <label for="institutionalEmail">Correo Institucional:</label>
-      <input type="text" placeholder="Escriba su correo institucional." formControlName="institutionalEmail">
-    </div>
+      <div id="correo" class="field">
+        <label for="institutionalEmail">Correo Institucional:</label>
+        <input type="text" placeholder="Escriba su correo institucional." formControlName="institutionalEmail">
+        <p-message *ngIf="institutionalEmailField.errors?.['required']" severity="error"
+          text="Este campo es obligatorio"></p-message>
+        <p-message *ngIf="institutionalEmailField.errors?.['email']" severity="error"
+          text="Debe ingresar un correo electrónico"></p-message>
+        <i *ngIf="institutionalEmailField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="telefono" class="field">
-      <label for="phone">Teléfono:</label>
-      <input type="text" placeholder="Escriba su teléfono." formControlName="phone">
-    </div>
+      <div id="telefono" class="field">
+        <label for="phone">Teléfono:</label>
+        <input type="tel" placeholder="Escriba su teléfono." formControlName="phone">
+        <p-message *ngIf="phoneField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres"></p-message>
+        <p-message *ngIf="phoneField.errors?.['maxlength']" severity="error" text="Máximo 20 caracteres">
+        </p-message>
+        <i *ngIf="phoneField.valid" class="pi pi-check-circle"></i>
 
-    <div id="botonGuardar">
-      <button type="submit">
-        <div id="iconoBotonGuardar">
-          <img src="../../assets/img/icons/white/save.png">
-        </div>Guardar
-      </button>
-    </div>
-    <div id="botonCancelar">
-      <a routerLink="/list-teachers">
-      <button type="submit">
-          <div id="iconoBotonCancelar">
+      </div>
+
+      <div id="botonGuardar">
+        <button type="submit">
+          <div id="iconoBotonGuardar">
+            <img src="../../assets/img/icons/white/save.png">
+          </div>Guardar
+        </button>
+      </div>
+      <div id="botonCancelar">
+        <a routerLink="/list-teachers">
+          <button type="submit">
+            <div id="iconoBotonCancelar">
               <img src="../../assets/img/icons/white/cross.png">
-          </div>Cancelar
-      </button></a>
-  </div>
-  </div>
+            </div>Cancelar
+          </button></a>
+      </div>
+    </div>
   </form>
 </div>

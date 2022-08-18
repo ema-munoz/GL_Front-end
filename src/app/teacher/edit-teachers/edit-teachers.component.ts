@@ -31,11 +31,11 @@ export class EditTeachersComponent implements OnInit {
         console.log (result)
         console.log(result.data.name)
         this.myForm = new FormGroup({
-        identificationCard:new FormControl(result.data.identificationCard),
-        names: new FormControl(result.data.names),
-        surnames: new FormControl(result.data.surnames),
-        institutionalEmail: new FormControl(result.data.institutionalEmail),
-        phone: new FormControl(result.data.phone)
+        identificationCard:new FormControl(result.data.identificationCard, [Validators.required, Validators.minLength(2), Validators.maxLength(11)]),
+        names: new FormControl(result.data.names, [Validators.required, Validators.minLength(2)]),
+        surnames: new FormControl(result.data.surnames, [Validators.required, Validators.minLength(2)]),
+        institutionalEmail: new FormControl(result.data.institutionalEmail, [ Validators.required, Validators.email]),
+        phone: new FormControl(result.data.phone, [ Validators.minLength(2), Validators.maxLength(20)])
       })}
     )
   }
@@ -104,7 +104,7 @@ export class EditTeachersComponent implements OnInit {
   }
 
   get phoneField() {
-    return this.myForm.controls['phoneEmail'];
+    return this.myForm.controls['phone'];
   }
 
 }

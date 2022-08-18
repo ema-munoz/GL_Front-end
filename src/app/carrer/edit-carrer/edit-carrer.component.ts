@@ -31,9 +31,9 @@ export class EditCarrerComponent implements OnInit {
         console.log (result)
         console.log(result.data.name)
         this.myForm = new FormGroup({
-        name: new FormControl(result.data.name),
-        acronym: new FormControl(result.data.acronym),
-        semesters: new FormControl(result.data.semester),
+        name: new FormControl(result.data.name, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]),
+        acronym: new FormControl(result.data.acronym, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]),
+        semesters: new FormControl(result.data.semesters, [Validators.required, Validators.min(1), Validators.max(10)]),
       })}
     )
   }
@@ -92,8 +92,8 @@ export class EditCarrerComponent implements OnInit {
     return this.myForm.controls['acronym'];
   }
 
-  get semesterField() {
-    return this.myForm.controls['semester'];
+  get semestersField() {
+    return this.myForm.controls['semesters'];
   }
 
 }
