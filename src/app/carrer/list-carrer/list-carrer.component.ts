@@ -11,8 +11,11 @@ export class ListCarrerComponent implements OnInit {
 
   careers: CareersModel[] = [];
   title: string = 'Carreras';
+  
+
+
   constructor(
-    private careerHttpService:CareerHttpService,
+    private careerHttpService: CareerHttpService,
   ) { }
 
   ngOnInit(): void {
@@ -26,4 +29,25 @@ export class ListCarrerComponent implements OnInit {
       }
     );
   }
+
+  show(id: number) {
+    this.careerHttpService.show(id).subscribe(
+      response => {
+
+      }
+    );
+  }
+
+  editClient(id) {
+    this.careerHttpService.navigate(['/edit-carrer', id]);
+  }
+
+  destroy(id: number) {
+    this.careerHttpService.destroy(id).subscribe(
+      response => {
+        this.index();
+      }
+    );
+  }
+
 }

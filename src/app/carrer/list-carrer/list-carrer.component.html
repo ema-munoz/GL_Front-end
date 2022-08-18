@@ -1,15 +1,17 @@
 <div id="contenedor">
   <div id="tituloGeneral">
-    <h1>Carreras</h1>
+    <h1>{{title}}</h1>
   </div>
 
 </div>
 
 <div id="botonCrearNuevo">
   <button type="submit">
+    <a routerLink="/create-carrer">
     <div id="iconoBotonCrearNuevo">
       <img src="../../assets/img/icons/white/plus.png">
     </div>Nuevo
+    </a>
   </button>
 </div>
 
@@ -25,20 +27,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>.</td>
-        <td></td>
+      <tr *ngFor="let career of careers">
+        <td>{{career.id}}</td>
+        <td>{{career.name}}</td>
+        <td>{{career.acronym}}</td>
+        <td>{{career.semesters}}</td>
         <td>
           <div id="botonEditarP">
-            <button type="submit">
+            <button type="submit" >  
+              <a routerLink="/edit-carrer/{{career.id}}">
               <div id="iconoBotonEditarP">
                 <img src="../../assets/img/icons/white/edit.png">
-              </div>E
+              </div>E</a>
             </button>
           </div>
-        </td>
-        <td>
-          <div id="botonEliminarP">
+          <div id="botonEliminarP" (click)="destroy(career.id!)">
             <button type="submit">
               <div id="iconoBotonEliminarP">
                 <img src="../../assets/img/icons/white/trash.png">
