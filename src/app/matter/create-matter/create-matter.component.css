@@ -10,7 +10,6 @@
   position: absolute;
   right: 580px;
   top: 45px;
-  font-size: medium;
 }
 
 #titulo {
@@ -25,9 +24,23 @@
   width: 80%;
 }
 
-#password {
+#carrer input[type=text], select {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 10%;
   width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#carrerName{
+  position: absolute;
+  top: 52%;
+  left: 10%;
+  border-radius: 60%;
+}
+#botonGuardar{
+  position: absolute;
+  left: 550px;
+  top: 400px;
 }
