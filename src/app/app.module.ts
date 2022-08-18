@@ -48,6 +48,7 @@ import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/ed
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
 import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
 import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
+import { ListLocationComponent } from './location/list-location/list-location.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -86,6 +87,7 @@ import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matte
     EditLabMatterDetailComponent,
     CreateLabMatterDetailComponent,
     ListLabMatterDetailComponent,
+    ListLocationComponent,
     //NavbarComponent
   ],
   imports: [

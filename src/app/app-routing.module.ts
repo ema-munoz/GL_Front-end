@@ -39,7 +39,8 @@ import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/ed
 import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
 import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
-//import { NavbarComponent } from './navbar/navbar.component';
+/*location*/
+import { ListLocationComponent } from './location/list-location/list-location.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -52,10 +53,12 @@ const routes: Routes = [
   {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'view-teachers', component: ViewTeachersComponent, canActivate:[ExpenseGuard]},
   {path: 'edit-teachers', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
+
   /*Matter*/
   {path: 'create-matter', component: CreateMatterComponent, canActivate:[ExpenseGuard]},
   {path: 'list-matter', component: ListMatterComponent, canActivate:[ExpenseGuard]},
   {path: 'edit-matter', component: EditMatterComponent, canActivate:[ExpenseGuard]},
+
   /*Carrer*/
   {path: 'create-carrer', component: CreateCarrerComponent, canActivate:[ExpenseGuard]},
   {path: 'list-carrer', component: ListCarrerComponent, canActivate:[ExpenseGuard]},
@@ -76,23 +79,19 @@ const routes: Routes = [
   {path: 'list-course', component: ListCourseComponent},
   {path: 'edit-course', component: EditCourseComponent},
 
-   /*Subject Teaching detail*/
+  /*Subject Teaching detail*/
    {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent},
    {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent},
    {path: 'edit-subject-teaching-detail', component: EditSubjectTeachingDetailComponent},
 
-    /*Lab Matter Detail*/
+  /*Lab Matter Detail*/
   {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent},
   {path: 'list-lab-matter-detail', component: ListLabMatterDetailComponent},
   {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent},
 
+  /*Location*/
+  {path: 'list-location', component: ListLocationComponent},
 
-
-  //{path: 'navbar', component: NavbarComponent},
-  /*{path: 'navbar',
-  loadChildren: ()=>
-    import('./navbar/navbar.module').then((m)=>m.NavbarModule)
-  }*/
 ];
 
 @NgModule({
