@@ -5,6 +5,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { HomeComponent } from './home/home.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { LoginComponent } from './login/login.component';
+import { CreateMatterComponent } from './create-matter/create-matter.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
   {path: 'list-teachers', component: ListTeachersComponent},
+  {path: 'create-matter', component: CreateMatterComponent},
   //{path: 'navbar', component: NavbarComponent},
   /*{path: 'navbar',
   loadChildren: ()=>
