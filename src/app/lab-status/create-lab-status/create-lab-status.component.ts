@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LabStatus } from 'src/app/models/lab-status.model';
 import { LabStatusService } from 'src/app/services/lab-status.service';
 
@@ -9,35 +9,60 @@ import { LabStatusService } from 'src/app/services/lab-status.service';
   styleUrls: ['./create-lab-status.component.css']
 })
 export class CreateLabStatusComponent implements OnInit {
-
-  // state = true;
-  // description = '';
-  // constructor(
-  //   private labStatusService: LabStatusService,
-  // ) { }
-
-  // ngOnInit(): void {
-  // }
-
-  // onCreate():void{
-  //   const labStatus= new LabStatus(this.state, this.description)
-  //   this.labStatusService.create(labStatus).subscribe(
-  //     data => {
-  //       console.log(data)
-  //     }
-  //   )
-  // }
-  labStatus: LabStatus[] = [];
+  labStatus: LabStatus[]= [];
+  title: string = 'Estado laboratorio';
   myForm: FormGroup;
   constructor(
     private labStatusService: LabStatusService,
-    private formBuilder:FormBuilder
-  ){
+    private formBuilder: FormBuilder
+  ) { 
     this.myForm = this.newForm();
   }
 
   ngOnInit(): void {
   }
 
+  newForm(): FormGroup {
+    return this.formBuilder.group({
+      id: [null],
+      state: [
+          Validators.required,
+          Validators.minLength(2),
+          Validators.maxLength(20),
+      ],
+      description: [
+        Validators.required,
+        Validators.minLength(2),
+        Validators.maxLength(100)
+      ]
+    });
+  }
   
+  findAll() {
+    this.labStatusService.findAll().subscribe((response) => {
+      this.labStatus = response.data;
+    });
+  }
+
+  onSubmit(){
+    if (this.myForm.valid) {
+      if(this.nameField.value){
+        this.create();
+      }
+      this.myForm.reset();
+    } else{
+      alert('El formulario no es valido');
+    }
+  }
+
+  create() {
+    this.labStatusService.create(this.myForm.value).subscribe((response) => {
+      this.findAll();
+    });
+  }
+
+  get nameField() {
+    return this.myForm.controls['id'];
+  }
 }
+
