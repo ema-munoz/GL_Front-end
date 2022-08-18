@@ -73,7 +73,7 @@ const routes: Routes = [
   /*Lab Status*/
   {path: 'create-lab-status', component: CreateLabStatusComponent, canActivate:[ExpenseGuard]},
   {path: 'list-lab-status', component: ListLabStatusComponent, canActivate:[ExpenseGuard]},
-  {path: 'edit-lab-status', component: EditLabStatusComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-lab-status/:id', component: EditLabStatusComponent, canActivate:[ExpenseGuard]},
 
   /*Laboratory*/
   {path: 'create-laboratory', component: CreateLaboratoryComponent, canActivate:[ExpenseGuard]},

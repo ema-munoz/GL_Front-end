@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LabStatus } from 'src/app/models/lab-status.model';
-import { LabStatusService } from 'src/app/services/lab-status.service';
+import { LabStatusModel } from 'src/app/models/lab-status.model';
+import { LabStatusHttpService } from 'src/app/services/lab-status.service';
 
 @Component({
   selector: 'app-list-lab-status',
@@ -8,9 +8,9 @@ import { LabStatusService } from 'src/app/services/lab-status.service';
   styleUrls: ['./list-lab-status.component.css']
 })
 export class ListLabStatusComponent implements OnInit {
-labStatus: LabStatus[] = [];
+labStatus: LabStatusModel[] = [];
   constructor(
-    private labStatusService: LabStatusService,
+    private labStatusHttpService: LabStatusHttpService,
   ) { }
 
   ngOnInit(): void {
@@ -18,8 +18,16 @@ labStatus: LabStatus[] = [];
   }
 
   findAll() {
-    this.labStatusService.findAll().subscribe((response) => {
+    this.labStatusHttpService.findAll().subscribe((response) => {
       this.labStatus = response.data;
     });
+  }
+
+  remove(id: number) {
+    this.labStatusHttpService.remove(id).subscribe(
+      response => {
+        this.findAll();
+      }
+    );
   }
 }
