@@ -6,8 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesModule } from "primeng/messages";
 import { MessageModule } from "primeng/message";
-import { CreateSubjectComponent } from './subjects/create-subject/create-subject.component';
-import { ListSubjectComponent } from './subjects/list-subject/list-subject.component';
 
 //external
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
