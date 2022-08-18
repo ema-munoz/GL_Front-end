@@ -27,8 +27,8 @@
         </div>
 
         <div id="semestres">
-            <label>Fecha de las Clases</label>
-            <input type="number" name="" required>
+            <label>Numero de Semestres</label>
+            <input type="number" name="" formControlName="semesters">
         </div>
 
         <div id="botonGuardar" >
@@ -41,9 +41,10 @@
 
         <div id="botonCancelar">
             <button type="submit">
+                <a routerLink="/list-carrer">
                 <div id="iconoBotonCancelar">
                     <img src="../../assets/img/icons/white/cross.png">
-                </div>Cancelar
+                </div>Cancelar</a>
             </button>
         </div>
     </form>

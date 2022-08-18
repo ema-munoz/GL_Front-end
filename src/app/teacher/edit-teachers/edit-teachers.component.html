@@ -9,7 +9,8 @@
       <div id="cedula" class="field">
         <label for="identificationCard">Cédula</label>
         <input pInputText type="text" placeholder="Escriba su número de cédula." formControlName="identificationCard">
-        <p-message *ngIf="identificationCardField.errors?.['required']" severity="error" text="Este campo es obligatorio"></p-message>
+        <p-message *ngIf="identificationCardField.errors?.['required']" severity="error"
+          text="Este campo es obligatorio"></p-message>
         <i *ngIf="identificationCardField.valid" class="pi pi-check-circle"></i>
       </div>
 
@@ -41,17 +42,13 @@
         </button>
       </div>
     </div>
-<<<<<<< HEAD
     <div id="botonCancelar">
+      <a routerLink="/list-teachers">
       <button type="submit">
-          <div id="iconoBotonCancelar">
-              <img src="../../assets/img/icons/white/cross.png">
-          </div>Cancelar
-      </button>
-  </div>
-  </div>
+        <div id="iconoBotonCancelar">
+          <img src="../../assets/img/icons/white/cross.png">
+        </div>Cancelar
+      </button></a>
+    </div>
+</form>
 </div>
-=======
-  </form>
-</div>
->>>>>>> 9c8125b65afc6425e8e0749c5969bfb0a68e90a6

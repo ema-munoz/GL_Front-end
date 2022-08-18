@@ -1,37 +1,36 @@
 <div id="contenedor">
 
   <div id="tituloGeneral">
-    <h1>Crear Docente</h1>
+    <h1>{{title}}</h1>
   </div>
-
-  <div id="formulario">
-    <div id="cedula">
-      <label>Cédula</label>
-      <input type="text" placeholder="Escriba su número de cédula.">
+  <form [formGroup]="myForm" (ngSubmit)="store()">
+  <div id="formulario" >
+    <div id="cedula" class="field">
+      <label for="identificationCard">Cédula</label>
+      <input type="text" placeholder="Escriba su número de cédula." formControlName="identificationCard">
     </div>
 
-    <div id="nombre">
-      <label>Nombre:</label>
-      <input type="text" placeholder="Escriba su nombres.">
+    <div id="nombre" class="field">
+      <label for="names">Nombres:</label>
+      <input type="text" placeholder="Escriba su nombres." formControlName="names">
     </div>
 
-    <div id="apellido">
-      <label>Apellidos:</label>
-      <input type="text" placeholder="Escriba su apellidos.">
+    <div id="apellido" class="field">
+      <label for="surnames">Apellidos:</label>
+      <input type="text" placeholder="Escriba su apellidos." formControlName="surnames">
     </div>
 
-    <div id="correo">
-      <label>Correo Institucional:</label>
-      <input type="text" placeholder="Escriba su correo institucional.">
+    <div id="correo" class="field">
+      <label for="institutionalEmail">Correo Institucional:</label>
+      <input type="text" placeholder="Escriba su correo institucional." formControlName="institutionalEmail">
     </div>
 
-    <div id="telefono">
-      <label>Teléfono:</label>
-      <input type="text" placeholder="Escriba su teléfono.">
+    <div id="telefono" class="field">
+      <label for="phone">Teléfono:</label>
+      <input type="text" placeholder="Escriba su teléfono." formControlName="phone">
     </div>
 
     <div id="botonGuardar">
-      <a href="/list-teacher"></a>
       <button type="submit">
         <div id="iconoBotonGuardar">
           <img src="../../assets/img/icons/white/save.png">
@@ -39,11 +38,13 @@
       </button>
     </div>
     <div id="botonCancelar">
+      <a routerLink="/list-teachers">
       <button type="submit">
           <div id="iconoBotonCancelar">
               <img src="../../assets/img/icons/white/cross.png">
           </div>Cancelar
-      </button>
+      </button></a>
   </div>
   </div>
+  </form>
 </div>
