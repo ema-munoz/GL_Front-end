@@ -54,6 +54,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { ListLocationComponent } from './location/list-location/list-location.component';
 import { EditLocationComponent } from './location/edit-location/edit-location.component';
 import { CreateLocationComponent } from './location/create-location/create-location.component';
+import { CreateLabAssignamentComponent } from './lab-assignament/create-lab-assignament/create-lab-assignament.component';
+import { EditLabAssignamentComponent } from './lab-assignament/edit-lab-assignament/edit-lab-assignament.component';
+import { ListLabAssignamentComponent } from './lab-assignament/list-lab-assignament/list-lab-assignament.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -94,6 +97,9 @@ import { CreateLocationComponent } from './location/create-location/create-locat
     ListLocationComponent,
     EditLocationComponent,
     CreateLocationComponent,
+    CreateLabAssignamentComponent,
+    EditLabAssignamentComponent,
+    ListLabAssignamentComponent,
   ],
   imports: [
     BrowserModule,

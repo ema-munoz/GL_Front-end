@@ -1,0 +1,53 @@
+#contenedor {
+    border: 15px solid #004aad;
+    border-radius: 5%;
+    max-width: 60%;
+    max-height: 85%;
+    left: 20.5%;
+    top: 12%;
+}
+
+#tituloGeneral {
+    position: absolute;
+    right: 580px;
+    top: 45px;
+}
+
+#titulo {
+    width: 48%;
+    top: 20%;
+    left: 26%;
+}
+
+#docente {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+
+#laboratorio {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 80%;
+}
+
+#fecha {
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    width: 80%;
+}
+
+#botonGuardar {
+    position: absolute;
+    left: 550px;
+    top: 440px;
+}
+
+#botonCancelar {
+    position: absolute;
+    left: 400px;
+    top: 440px;
+}

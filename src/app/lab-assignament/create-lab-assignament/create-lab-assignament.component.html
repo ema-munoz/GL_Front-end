@@ -1,0 +1,61 @@
+<div id="contenedor">
+
+    <div id="tituloGeneral">
+        <h2>{{title}}</h2>
+    </div>
+    <form [formGroup]="myForm" (ngSubmit)="create()">
+        <div id="docente" class="field">
+            <label for="teacher">Docente</label>
+            <input pInputText type="text" formControlName="teacher">
+            <p-message *ngIf="teacherField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="teacherField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="teacherField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres"></p-message>
+            <i *ngIf="teacherField.valid" class="pi pi-check-circle"></i>
+        </div>
+
+        <div id="laboratorio" class="field">
+            <label for="laboratory">Laboratorio</label>
+            <input pInputText type="text" name="" formControlName="laboratory">
+            <p-message *ngIf="laboratoryField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="laboratoryField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="laboratoryField.errors?.['maxlength']" severity="error" text="Máximo 5 caracteres"></p-message>
+            <i *ngIf="laboratoryField.valid" class="pi pi-check-circle"></i>
+        </div>
+
+        <!-- <div id="semestres">
+            <label for="semesters">Numero de Semestres</label>
+            <input type="number" name="" formControlName="semesters">
+            <p-message *ngIf="semestersField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="semestersField.errors?.['min']" severity="error" text="Minimo 1"></p-message>
+        <p-message *ngIf="semestersField.errors?.['max']" severity="error" text="Maximo 10"></p-message>
+            <i *ngIf="semestersField.valid" class="pi pi-check-circle"></i>
+        </div> -->
+
+        <div id="fecha">
+            <label id="date" for="date">Fecha</label>
+            <input type="date" formControlName="date"/>
+        </div>
+
+        <div id="botonGuardar" >
+            <button type="submit">
+                <div id="iconoBotonGuardar">
+                    <img src="../../assets/img/icons/white/save.png">
+                </div>Guardar
+            </button>
+        </div>
+
+        <div id="botonCancelar">
+            <button type="submit">
+                <a routerLink="/list-carrer">
+                <div id="iconoBotonCancelar">
+                    <img src="../../assets/img/icons/white/cross.png">
+                </div>Cancelar</a>
+            </button>
+        </div>
+    </form>
+</div>

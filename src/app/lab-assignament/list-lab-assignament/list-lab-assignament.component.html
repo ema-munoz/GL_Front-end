@@ -1,0 +1,55 @@
+<div id="contenedor">
+    <div id="tituloGeneral">
+        <h1>{{title}}</h1>
+    </div>
+
+    <div id="botonCrearNuevo">
+        <button type="submit">
+            <a routerLink="/create-lab-assignament">
+                <div id="iconoBotonCrearNuevo">
+                    <img src="../../assets/img/icons/white/plus.png">
+                </div>Nuevo
+            </a>
+        </button>
+    </div>
+
+    <div id="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Docente</th>
+                    <th scope="col">Laboratorio</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let labAssignament of labAssignaments">
+                    <td>{{labAssignament.id}}</td>
+                    <td>{{labAssignament.teacher}}</td>
+                    <td>{{labAssignament.laboratory}}</td>
+                    <td>{{labAssignament.date}}</td>
+                    <td>
+                        <div id="botonEditarP">
+                            <button type="submit">
+                                <a routerLink="/edit-carrer/{{labAssignament.id}}">
+                                    <div id="iconoBotonEditarP">
+                                        <img src="../../assets/img/icons/white/edit.png">
+                                    </div>E
+                                </a>
+                            </button>
+                        </div>
+                        <div id="botonEliminarP" (click)="remove(labAssignament.id!)">
+                            <button type="submit">
+                                <div id="iconoBotonEliminarP">
+                                    <img src="../../assets/img/icons/white/trash.png">
+                                </div>E
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
