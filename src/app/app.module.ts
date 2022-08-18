@@ -24,6 +24,7 @@ import { CreateTeachersComponent } from './teacher/create-teachers/create-teache
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
 import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
 import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
 
 //import { NavbarComponent } from './navbar/navbar.component';
 
@@ -42,6 +43,7 @@ import { CreateMatterComponent } from './matter/create-matter/create-matter.comp
     ViewTeachersComponent,
     CreateMatterComponent,
     ListMatterComponent,
+    EditMatterComponent,
     //NavbarComponent
   ],
   imports: [

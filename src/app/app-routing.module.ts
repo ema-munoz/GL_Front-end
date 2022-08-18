@@ -5,9 +5,6 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
-
-import { ListMatterComponent } from './matter/list-matter/list-matter.component';
-
 /* Teacher */
 import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
 import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
@@ -15,6 +12,8 @@ import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.com
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
 /* Matter */
 import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
+import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
+import { ListMatterComponent } from './matter/list-matter/list-matter.component';
 
 //import { NavbarComponent } from './navbar/navbar.component';
 
@@ -31,9 +30,8 @@ const routes: Routes = [
   {path: 'edit-teachers', component: EditTeachersComponent},
   /*Matter*/
   {path: 'create-matter', component: CreateMatterComponent},
-
   {path: 'list-matter', component: ListMatterComponent},
-
+  {path: 'edit-matter', component: EditMatterComponent},
 
 
   //{path: 'navbar', component: NavbarComponent},
