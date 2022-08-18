@@ -1,99 +1,92 @@
 <div id="contenedor">
 
     <div id="tituloGeneral">
-        <h4>Editar Detalle Docente Materia</h4>
+        <h4>{{title}}</h4>
     </div>
+    <form [formGroup]="myForm">
+        <div id="fecha" class="field">
+            <label for="date">fecha</label>
+            <input type="date" name="" formControlName="date">
+        </div>
 
-    <div id="fecha">
-        <label>fecha</label>
-        <input type="date" name="" required>
-    </div>
+        <div>
+            <label for="day" id="diasName"></label>
+            <h5 id="ndias">Dia</h5>
+            <input id="dias" name="dias" type="text" list="days" formControlName="day">
+            <datalist id="days">
+                <option value="Lunes">
+                <option value="Martes">
+                <option value="Miercoles">
+                <option value="Jueves">
+                <option value="Viernes">
+            </datalist>
 
-    <div>
-        <label for="dias" id="diasName"></label>
-        <h5 id="ndias">Dia</h5>
-        <select id="dias" name="dias">
-            <option value=""></option>
-            <option value="Lunes">Lunes</option>
-            <option value="Martes">Martes</option>
-            <option value="Miercoles">Miercoles</option>
-            <option value="Jueves">Jueves</option>
-            <option value="Viernes">Viernes</option>
-        </select>
-    </div>
+        </div>
 
-    <div id="horaInicio">
-        <label>hora Inicio</label>
-        <input type="time" name="" required>
-    </div>
-    
-    <div id="horaFin">
-        <label>hora Fin</label>
-        <input type="time" name="" required>
-    </div>
+        <div id="horaInicio" class="field">
+            <label for="hourStart">hora Inicio</label>
+            <input type="time" name="" formControlName="hourStart">
+        </div>
 
-    <div>
-        <label for="curso" id="cursoName">Curso</label>
-        <select id="curso" name="curso">
-            <option value=""></option>
-            <option value="quinto a">Quinto A</option>
-            <option value="quinto b">Quinto B</option>
-            <option value="quinto n">Quinto C</option>
-        </select>
-    </div>
-    <div>
-    
-        <label for="teacher" id="teacherName"></label>
-        <h5 id="ndocente">Docente</h5>
-        <select id="teacher" name="teacher">
-          <option value=""></option>
-          <option value="yougledis herrera">Yougledis Herrera</option>
-          <option value="vespertina">Maritza Tituaña</option>
-          <option value="nocturna">Mauricio Tamayo</option>
-          <option value="nocturna">Geovanny Pazmiño</option>
-          <option value="nocturna">Lorena Chulde</option>
-        </select>
-      </div>
-       
-      <div>
-        <label for="asignatura" id="asignaturalName"></label>
-        <h5 id="nasignatura">Asignatura</h5>
-        <select id="asignatura" name="asignatura">
-            <option value=""></option>
-            <option value="uno">Tendecias Actuales de Programacion</option>
-            <option value="dos">Redes y Conectividad</option>
-            <option value="tres">Etica Profesional</option>
-            <option value="tres">Emprendimiento</option>
-        </select>
-    </div>
-    
-    <div>
-        <label for="detalle" id="detalleName"></label>
-        <h5 id="ndetalle">Detalle Laboratorio Detalle Docente</h5>
-        <select id="detalle" name="detalle">
-          <option value=""></option> <!--campo en blanco no mover-->
-          <option value=""></option>
-          <option value=""></option> <!--ver que campo va aqui-->
-          <option value=""></option>
-        </select>
-      </div>
-      <div> 
-    
-   
+        <div id="horaFin" class="field">
+            <label for="hourFinish">hora Fin</label>
+            <input type="time" name="" formControlName="hourFinish">
+        </div>
 
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
-    </div>
+        <div>
+            <label for="curso" id="cursoName">Curso</label>
+            <input id="curso" name="curso" type="text" list="courses" formControlName="course">
+            <datalist id="courses">
+                <option value="5VADS">
+                <option value="5VBDS">
+                <option value="1MADS">
+                <option value="2MBDS">
+                <option value="3NADS">
+            </datalist>
+        </div>
+        <div>
 
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
-</div>
+            <label for="teacher" id="teacherName"></label>
+            <h5 id="ndocente">Docente</h5>
+            <input id="teacher" name="teacher" type="text" list="teachers" formControlName="teacher">
+            <datalist id="teachers">
+                <option value="yougledis herrera">Yougledis Herrera</option>
+                <option value="vespertina">Maritza Tituaña</option>
+                <option value="nocturna">Mauricio Tamayo</option>
+                <option value="nocturna">Geovanny Pazmiño</option>
+                <option value="nocturna">Lorena Chulde</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="asignatura" id="asignaturalName"></label>
+            <h5 id="nasignatura">Asignatura</h5>
+            <input id="asignatura" name="asignatura" type="text" list="subject" formControlName="subject">
+            <datalist id="subject">
+                <select id="asignatura" name="asignatura">
+                    <option value=""></option>
+                    <option value="Tendecias Actuales de Programacion">Tendecias Actuales de Programacion</option>
+                    <option value="Redes y Conectividad">Redes y Conectividad</option>
+                    <option value="Etica Profesional">Etica Profesional</option>
+                    <option value="Emprendimiento">Emprendimiento</option>
+                </select>
+            </datalist>
+        </div>
+
+        <div id="botonGuardar" (click)="update()">
+            <button type="submit">
+                <div id="iconoBotonGuardar">
+                    <img src="../../assets/img/icons/white/save.png">
+                </div>Guardar
+            </button>
+        </div>
+
+        <div id="botonCancelar">
+            <button type="submit">
+                <a routerLink="/list-subject-teaching-detail">
+                <div id="iconoBotonCancelar">
+                    <img src="../../assets/img/icons/white/cross.png">
+                </div>Cancelar
+            </a>
+            </button>
+        </div>

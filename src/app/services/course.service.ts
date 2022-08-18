@@ -25,20 +25,20 @@ export class CourseHttpService {
 
   show(id: number) {
 
-    const url = `${this.API_URL}/courses/${id}`;
+    const url = `${this.API_URL}/careers/${id}`;
     return this.httpClient.get<ResponseModel>(url);
   }
 
-  store(career: CourseModel) {
+  store(course: CourseModel) {
 
     const url = `${this.API_URL}/courses`;
-    return this.httpClient.post<ResponseModel>(url, career);
+    return this.httpClient.post<ResponseModel>(url, course);
   }
 
-  update(id: number, career: CourseModel) {
+  update(id: number, course: CourseModel) {
 
     const url = `${this.API_URL}/courses/${id}`;
-    return this.httpClient.put<ResponseModel>(url , career);
+    return this.httpClient.put<ResponseModel>(url , course);
   }
 
   destroy(id: number) {

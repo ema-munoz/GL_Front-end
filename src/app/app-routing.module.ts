@@ -53,6 +53,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent, canActivate:[ExpenseGuard]},
   {path: 'botones', component: BotonesComponent, canActivate:[ExpenseGuard]},
   {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
 
   /* Teachers  */
@@ -88,7 +89,7 @@ const routes: Routes = [
   /*Subject Teaching detail*/
    {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
    {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
-   {path: 'edit-subject-teaching-detail', component: EditSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+   {path: 'edit-subject-teaching-detail/:id', component: EditSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
 
   /*Lab Matter Detail*/
   {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent, canActivate:[ExpenseGuard]},

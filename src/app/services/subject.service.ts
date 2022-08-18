@@ -11,8 +11,14 @@ export class SubjectHttpService {
   API_URL: string;
 
   constructor(private hhtpClient: HttpClient) {
-    this.API_URL = environment.API_URL;
-}
+    this.API_URL= environment.API_URL;
+  }
+
+  index() {
+
+    const url = `${this.API_URL}/subjects`;
+    return this.hhtpClient.get<ResponseModel>(url);
+  }
 
 findAll(){
     const url = `${this.API_URL}/subjects`
