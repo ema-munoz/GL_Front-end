@@ -9,6 +9,8 @@ import { CreateTeachersComponent } from './teacher/create-teachers/create-teache
 import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
+/* Matter */
+import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -22,6 +24,9 @@ const routes: Routes = [
   {path: 'list-teachers', component: ListTeachersComponent},
   {path: 'view-teachers', component: ViewTeachersComponent},
   {path: 'edit-teachers', component: EditTeachersComponent},
+  /*Matter*/
+  {path: 'create-matter', component: CreateMatterComponent},
+
   //{path: 'navbar', component: NavbarComponent},
   /*{path: 'navbar',
   loadChildren: ()=>
