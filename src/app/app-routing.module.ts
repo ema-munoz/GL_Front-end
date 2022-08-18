@@ -41,6 +41,8 @@ import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matte
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
 /*location*/
 import { ListLocationComponent } from './location/list-location/list-location.component';
+import { CreateLocationComponent } from './location/create-location/create-location.component';
+import { EditLocationComponent } from './location/edit-location/edit-location.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -90,8 +92,9 @@ const routes: Routes = [
   {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent, canActivate:[ExpenseGuard]},
 
   /*Location*/
+  {path: 'create-location', component: CreateLocationComponent},
   {path: 'list-location', component: ListLocationComponent},
-
+  {path: 'edit-location', component: EditLocationComponent},
 ];
 
 @NgModule({
