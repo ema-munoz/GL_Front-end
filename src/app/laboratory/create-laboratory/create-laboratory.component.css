@@ -11,7 +11,7 @@
     right: 580px;
     top: 45px;
   }
-  
+
   #titulo {
     width: 48%;
     top: 20%;
@@ -23,14 +23,14 @@
     left: 10%;
     width: 80%;
   }
-  #numero {
+  #capacidad {
     position: absolute;
     top: 42%;
     left: 10%;
     width: 80%;
   }
-  
-  #estado input[type=text], select {
+
+  #estadoLaboratorio input[type=text], select {
     position: absolute;
     top: 70%;
     left: 10%;
@@ -39,7 +39,8 @@
     border-radius: 10px;
     box-sizing: border-box;
   }
-  #estadoName{
+
+  #estadoLaboratorio{
     position: absolute;
     top: 62%;
     left: 10%;
@@ -48,10 +49,10 @@
   #botonGuardar{
     position: absolute;
     left: 550px;
-    top: 440px;
+    top: 550px;
   }
   #botonCancelar{
     position: absolute;
     left: 400px;
-    top: 440px;
+    top: 550px;
   }

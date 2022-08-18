@@ -1,44 +1,58 @@
 <div id="contenedor">
 
-    <div id="tituloGeneral">
-        <h2>Editar Laboratorio</h2>
-    </div>
+  <div id="tituloGeneral">
+      <h2>{{title}}</h2>
+  </div>
+  <form [formGroup]="myForm" >
+      <div id="nombre" class="field">
+          <label for="name">Nombre</label>
+          <input pInputText id="name" type="text" name="" formControlName="name">
+          <p-message *ngIf="nameField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+          </p-message>
+          <p-message *ngIf="nameField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+          </p-message>
+          <p-message *ngIf="nameField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres"></p-message>
+          <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
+      </div>
+      <br>
+      <div id="siglas">
+          <label for="capacity">Siglas</label>
+          <input pInputText id="name" type="text" name="capacity" formControlName="capacity">
+          <p-message *ngIf="capacityField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+          </p-message>
+          <p-message *ngIf="capacityField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+          </p-message>
+          <p-message *ngIf="capacityField.errors?.['maxlength']" severity="error" text="Máximo 5 caracteres"></p-message>
+          <i *ngIf="capacityField.valid" class="pi pi-check-circle"></i>
 
-    <div id="nombre">
-        <label>Nombre</label>
-        <input type="nombre" name="" required>
-    </div>
+      </div>
+      <br>
+      <div id="semestres" class="field">
+          <label for="stateLaboratoryId">Numero de Semestres</label>
+          <input pInputText type="number" name="" formControlName="stateLaboratoryId">
+          <p-message *ngIf="stateLaboratoryIdField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+          </p-message>
+          <p-message *ngIf="stateLaboratoryIdField.errors?.['min']" severity="error" text="Minimo 1"></p-message>
+      <p-message *ngIf="stateLaboratoryIdField.errors?.['max']" severity="error" text="Maximo 10"></p-message>
+          <i *ngIf="stateLaboratoryIdField.valid" class="pi pi-check-circle"></i>
+      </div>
 
-    <div id="numero">
-        <label>Numero de Máquinas</label>
-        <input type="numero" name="" required>
-    </div>
+      <div id="botonGuardar" (click)="update()">
+          <button type="submit">
+              <div id="iconoBotonGuardar">
+                  <img src="../../assets/img/icons/white/save.png">
+              </div>Guardar
+          </button>
+      </div>
 
-    <div>
-        <label for="estado" id="estadoName">Estado Laboratorio</label>
-        <select id="estado" name="estado">
-            <option value=""></option>
-            <option value="ocupado">Ocupado</option>
-            <option value="disponible">Disponible</option>
-            <option value="mantenimiento">Mantenimiento</option>
-        </select>
-    </div>
-
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
-    </div>
-
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
+      <div id="botonCancelar">
+          <button type="submit">
+              <a routerLink="/list-laboratory">
+              <div id="iconoBotonCancelar">
+                  <img src="../../assets/img/icons/white/cross.png">
+              </div>Cancelar
+              </a>
+          </button>
+      </div>
+  </form>
 </div>
-
-
