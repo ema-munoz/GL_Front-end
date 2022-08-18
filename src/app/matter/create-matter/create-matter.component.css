@@ -6,46 +6,32 @@
   left: 20.5%;
   top: 12%;
 }
-#tituloGeneral {
+
+#titleGeneral {
   position: absolute;
   right: 580px;
   top: 45px;
 }
 
-#titulo {
-  width: 48%;
-  top: 20%;
-  left: 26%;
-}
-#nombre {
+#nombre,
+#carrerName{
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
   width: 80%;
 }
 
-#carrer input[type=text], select {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  width: 80%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
 #carrerName{
-  position: absolute;
-  top: 52%;
-  left: 10%;
-  border-radius: 60%;
+  top: 50%;
 }
+
 #botonGuardar{
   position: absolute;
-  left: 550px;
-  top: 400px;
+  left: 25%;
+  top: 80%;
 }
 #botonCancelar{
   position: absolute;
-  left: 400px;
-  top: 400px;
+  left: 60%;
+  top: 80%;
 }

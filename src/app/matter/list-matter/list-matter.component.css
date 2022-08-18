@@ -6,14 +6,16 @@
     left: 20.5%;
     top: 12%;
   }
+  /* titulo general */
   #tituloGeneral {
     margin-right: 580px;
     margin-top: 35px;
   }
+  /* boton crear nuevo */
   #botonCrearNuevo{
     position: absolute;
-    left: 725px;
-    top: 130px;
+    left: 60%;
+    top: 20%
   }
   /* tabla */
   #tabla {
@@ -26,7 +28,7 @@
     top: 32%;
     left: 25%;
   }
-  
+
   table {
     font-size: 20px;
     width: 100%;
@@ -36,7 +38,7 @@
     border-collapse: collapse;
     border: 3px solid black;
   }
-  
+
   th {
     font-size: 15px;
     font-weight: normal;
@@ -46,7 +48,7 @@
     border-bottom: 1px solid #fff;
     color: #039;
   }
-  
+
   td {
     font-size: 20px;
     padding: 8px;
@@ -55,12 +57,12 @@
     color: #669;
     border-top: 1px solid transparent;
   }
-  
+
   tr:hover td {
     background: #d0dafd;
     color: #339;
   }
-  
+    /* Botones */
   #botonEliminarP{
     background-color: black;
     margin-top: -2.0%;
@@ -69,8 +71,7 @@
   #botonEditarP{
     background-color: black;
     margin-top: -2.0%;
-    margin-left: 32%;
+    margin-left: 7%;
   }
-  
 
-  
+

@@ -1,7 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { CareersModel } from '../models/career.model';
 import { CourseModel } from '../models/course.model';
 import { ResponseModel } from '../models/response.model';
 

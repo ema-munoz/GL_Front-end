@@ -8,7 +8,7 @@ import { LabStatusHttpService } from 'src/app/services/lab-status.service';
   styleUrls: ['./list-lab-status.component.css']
 })
 export class ListLabStatusComponent implements OnInit {
-labStatus: LabStatusModel[] = [];
+  labStatus: LabStatusModel[] = [];
   constructor(
     private labStatusHttpService: LabStatusHttpService,
   ) { }

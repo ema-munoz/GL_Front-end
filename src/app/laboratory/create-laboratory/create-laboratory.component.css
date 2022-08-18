@@ -11,7 +11,7 @@
     right: 580px;
     top: 45px;
   }
-  
+
   #titulo {
     width: 48%;
     top: 20%;
@@ -23,35 +23,42 @@
     left: 10%;
     width: 80%;
   }
-  #numero {
+  #capacidad {
     position: absolute;
     top: 42%;
     left: 10%;
     width: 80%;
   }
-  
-  #estado input[type=text], select {
+
+  #estadoLaboratorio{
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 10%;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
+    width: 100%;
+
   }
-  #estadoName{
-    position: absolute;
-    top: 62%;
-    left: 10%;
-    border-radius: 60%;
-  }
+
+  /* #estadoLaboratorio select {
+  text-align: center;
+  font-style: italic;
+  border-radius: 20px;
+  border-bottom: 6px solid coral;
+  transition: all .5s ease;
+  width: 80%;
+} */
+
+select:focus {
+  border-bottom: 6px solid #004aad;
+}
   #botonGuardar{
     position: absolute;
     left: 550px;
-    top: 440px;
+    top: 550px;
   }
   #botonCancelar{
     position: absolute;
     left: 400px;
-    top: 440px;
+    top: 550px;
   }
+
+

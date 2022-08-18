@@ -1,5 +1,6 @@
-export interface Subject {
+
+export interface SubjectModel {
     id?: number;
-    name: string;
-    authdata?: string
+    name?: string;
+    career?: string;
 }

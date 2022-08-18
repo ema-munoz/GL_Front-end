@@ -1,56 +1,59 @@
 <div id="contenedor">
 
     <div id="tituloGeneral">
-      <h2>{{title}}</h2>
+        <h2>{{title}}</h2>
     </div>
     <form [formGroup]="myForm" (ngSubmit)="store()">
-      <div id="nombre" class="field">
-        <label for="name">Nombre</label>
-        <input pInputText type="text" formControlName="name">
-        <p-message *ngIf="nameField.errors?.['required']" severity="error" text="Este campo es obligatorio">
-        </p-message>
-        <p-message *ngIf="nameField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
-        </p-message>
-        <p-message *ngIf="nameField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres"></p-message>
-        <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
-    </div>
+        <div id="nombre" class="field">
+            <label for="name">Nombre</label>
+            <input pInputText type="text" formControlName="name">
+            <p-message *ngIf="nameField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="nameField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="nameField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres">
+            </p-message>
+            <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
+        </div>
 
-    <div id="numero"  class="field">
-      <label for="capacity">Capacidad</label>
-      <input pInputText type="text" name="" formControlName="capacity">
-      <p-message *ngIf="acronymField.errors?.['required']" severity="error" text="Este campo es obligatorio">
-      </p-message>
-      <p-message *ngIf="acronymField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
-      </p-message>
-      <p-message *ngIf="acronymField.errors?.['maxlength']" severity="error" text="Máximo 5 caracteres"></p-message>
-      <i *ngIf="acronymField.valid" class="pi pi-check-circle"></i>
-  </div>
+        <div id="capacidad" class="field">
+            <label for="capacity">Capacidad</label>
+            <input pInputText type="number" name="" formControlName="capacity">
+            <p-message *ngIf="capacityField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="capacityField.errors?.['min']" severity="error" text="Minimo 1"></p-message>
+            <p-message *ngIf="capacityField.errors?.['max']" severity="error" text="Maximo 50"></p-message>
+            <i *ngIf="capacityField.valid" class="pi pi-check-circle"></i>
+        </div>
 
-    <div>
-        <label for="estado" id="estadoName">Estado Laboratorio</label>
-        <select id="estado" name="estado">
-            <option value=""></option>
-            <option value="ocupado">Ocupado</option>
-            <option value="disponible">Disponible</option>
-            <option value="mantenimiento">Mantenimiento</option>
-        </select>
-    </div>
+        <div id="estadoLaboratorio" class="field">
+            <label for="stateLaboratory">Estado</label>
+            <input pInputText type="text" formControlName="stateLaboratory">
+            <p-message *ngIf="stateLaboratoryField.errors?.['required']" severity="error" text="Este campo es obligatorio">
+            </p-message>
+            <p-message *ngIf="stateLaboratoryField.errors?.['minlength']" severity="error" text="Mínimo 2 caracteres">
+            </p-message>
+            <p-message *ngIf="stateLaboratoryField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres">
+            </p-message>
+            <i *ngIf="stateLaboratoryField.valid" class="pi pi-check-circle"></i>
+        </div>
 
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
-    </div>
+        <div id="botonGuardar">
+            <button type="submit">
+                <div id="iconoBotonGuardar">
+                    <img src="../../assets/img/icons/white/save.png">
+                </div>Guardar
+            </button>
+        </div>
 
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
-  </form>
+        <div id="botonCancelar">
+            <button type="submit">
+                <a routerLink="/list-laboratory">
+                    <div id="iconoBotonCancelar">
+                        <img src="../../assets/img/icons/white/cross.png">
+                    </div>Cancelar
+                </a>
+            </button>
+        </div>
+    </form>
 </div>
-

@@ -30,13 +30,10 @@ export class CreateLaboratoryComponent implements OnInit {
   newForm(): FormGroup{
     return this.formBuilder.group({
       name: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]],
-      capacity: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]],
-      stateLaboratoryId: [null, [Validators.required, Validators.min(1), Validators.max(10)]]
+      capacity: [null, [Validators.required, Validators.min(1), Validators.max(50)]],
+      stateLaboratory: [null, [Validators.required]]
     })
   }
-
-
-
 
   store() {
 
@@ -53,12 +50,12 @@ export class CreateLaboratoryComponent implements OnInit {
     return this.myForm.controls['name'];
   }
 
-  get acronymField() {
+  get capacityField() {
     return this.myForm.controls['capacity'];
   }
 
-  get semesterField() {
-    return this.myForm.controls['stateLaboratoryId'];
+  get stateLaboratoryField() {
+    return this.myForm.controls['stateLaboratory'];
   }
 
 }
