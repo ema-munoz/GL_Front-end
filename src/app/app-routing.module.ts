@@ -39,8 +39,15 @@ import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/ed
 import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
 import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
+
 import { LogoutComponent } from './logout/logout.component';
 //import { NavbarComponent } from './navbar/navbar.component';
+
+/*location*/
+import { ListLocationComponent } from './location/list-location/list-location.component';
+import { CreateLocationComponent } from './location/create-location/create-location.component';
+import { EditLocationComponent } from './location/edit-location/edit-location.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -50,51 +57,51 @@ const routes: Routes = [
   {path: 'logout', component: LogoutComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
   /* Teachers  */
-  {path: 'create-teachers', component: CreateTeachersComponent},
-  {path: 'list-teachers', component: ListTeachersComponent},
-  {path: 'view-teachers', component: ViewTeachersComponent},
-  {path: 'edit-teachers/:id', component: EditTeachersComponent},
+
+  {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'view-teachers', component: ViewTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-teachers/:id', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
+
   /*Subjects*/
-  {path: 'create-subject', component: CreateMatterComponent},
-  {path: 'list-subject', component: ListMatterComponent},
-  {path: 'edit-subject', component: EditMatterComponent},
+  {path: 'create-subject', component: CreateMatterComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-subject', component: ListMatterComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-subject', component: EditMatterComponent, canActivate:[ExpenseGuard]},
+
   /*Carrer*/
   {path: 'create-carrer', component: CreateCarrerComponent, canActivate:[ExpenseGuard]},
   {path: 'list-carrer', component: ListCarrerComponent, canActivate:[ExpenseGuard]},
   {path: 'edit-carrer/:id', component: EditCarrerComponent, canActivate:[ExpenseGuard]},
 
   /*Lab Status*/
-  {path: 'create-lab-status', component: CreateLabStatusComponent},
-  {path: 'list-lab-status', component: ListLabStatusComponent},
-  {path: 'edit-lab-status', component: EditLabStatusComponent},
+  {path: 'create-lab-status', component: CreateLabStatusComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-lab-status', component: ListLabStatusComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-lab-status', component: EditLabStatusComponent, canActivate:[ExpenseGuard]},
 
   /*Laboratory*/
-  {path: 'create-laboratory', component: CreateLaboratoryComponent},
-  {path: 'list-laboratory', component: ListLaboratoryComponent},
-  {path: 'edit-laboratory', component: EditLaboratoryComponent},
+  {path: 'create-laboratory', component: CreateLaboratoryComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-laboratory', component: ListLaboratoryComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-laboratory', component: EditLaboratoryComponent, canActivate:[ExpenseGuard]},
 
   /*Course*/
-  {path: 'create-course', component: CreateCourseComponent},
-  {path: 'list-course', component: ListCourseComponent},
-  {path: 'edit-course', component: EditCourseComponent},
+  {path: 'create-course', component: CreateCourseComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-course', component: ListCourseComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-course', component: EditCourseComponent, canActivate:[ExpenseGuard]},
 
-   /*Subject Teaching detail*/
-   {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent},
-   {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent},
-   {path: 'edit-subject-teaching-detail', component: EditSubjectTeachingDetailComponent},
+  /*Subject Teaching detail*/
+   {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+   {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+   {path: 'edit-subject-teaching-detail', component: EditSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
 
-    /*Lab Matter Detail*/
-  {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent},
-  {path: 'list-lab-matter-detail', component: ListLabMatterDetailComponent},
-  {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent},
+  /*Lab Matter Detail*/
+  {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-lab-matter-detail', component: ListLabMatterDetailComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent, canActivate:[ExpenseGuard]},
 
-
-
-  //{path: 'navbar', component: NavbarComponent},
-  /*{path: 'navbar',
-  loadChildren: ()=>
-    import('./navbar/navbar.module').then((m)=>m.NavbarModule)
-  }*/
+  /*Location*/
+  {path: 'create-location', component: CreateLocationComponent},
+  {path: 'list-location', component: ListLocationComponent},
+  {path: 'edit-location', component: EditLocationComponent},
 ];
 
 @NgModule({

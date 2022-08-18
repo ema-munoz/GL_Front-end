@@ -33,22 +33,11 @@
   width: 80%;
 }
 
-#semestres input[type=text],
-select {
+#semestres{
   position: absolute;
-  top: 70%;
+  top: 66%;
   left: 10%;
   width: 80%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-#semestresName {
-  position: absolute;
-  top: 62%;
-  left: 10%;
-  border-radius: 60%;
 }
 
 #botonGuardar {
