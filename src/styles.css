@@ -32,7 +32,8 @@ select {
   width: 100%;
 }
 
-input:focus {
+input:focus,
+select:focus {
   border-bottom: 6px solid #004aad;
 }
 

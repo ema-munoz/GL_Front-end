@@ -30,22 +30,26 @@
     width: 80%;
   }
 
-  #estadoLaboratorio input[type=text], select {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-
   #estadoLaboratorio{
     position: absolute;
-    top: 62%;
+    top: 60%;
     left: 10%;
-    border-radius: 60%;
+    width: 100%;
+
   }
+
+  #estadoLaboratorio select {
+  text-align: center;
+  font-style: italic;
+  border-radius: 20px;
+  border-bottom: 6px solid coral;
+  transition: all .5s ease;
+  width: 80%;
+}
+
+select:focus {
+  border-bottom: 6px solid #004aad;
+}
   #botonGuardar{
     position: absolute;
     left: 550px;
@@ -56,3 +60,5 @@
     left: 400px;
     top: 550px;
   }
+
+

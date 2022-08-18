@@ -30,8 +30,8 @@ export class CreateLaboratoryComponent implements OnInit {
   newForm(): FormGroup{
     return this.formBuilder.group({
       name: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]],
-      capacity: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]],
-      stateLaboratoryId: [null, [Validators.required, Validators.min(1), Validators.max(10)]]
+      capacity: [null, [Validators.required, Validators.min(1), Validators.max(50)]],
+      stateLaboratoryId: [null, [Validators.required]]
     })
   }
 
