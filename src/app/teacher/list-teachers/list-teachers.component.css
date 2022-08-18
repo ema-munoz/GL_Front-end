@@ -6,6 +6,11 @@
   left: 10%;
   top: 20%;
 }
+#botonCrearNuevo{
+  position: absolute;
+  left: 895px;
+  top: 18px;
+}
 
 #tituloGeneral {
   background-color: #8f8e8e;
