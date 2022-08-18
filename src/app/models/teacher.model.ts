@@ -4,6 +4,6 @@ export interface TeachersModel {
     names: string;
     surnames: string;
     institutionalEmail: string;
-    phone: string;
+    phone?: string;
     authdata?: string
 }

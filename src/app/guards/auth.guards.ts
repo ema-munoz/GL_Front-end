@@ -9,7 +9,8 @@ import { AuthService } from '../services/authentication.service';
 })
 export class ExpenseGuard implements CanActivate {
 
-   constructor(private router: Router) {}
+   constructor(
+      private router: Router) {}
 
    canActivate(
    next: ActivatedRouteSnapshot,
