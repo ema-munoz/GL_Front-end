@@ -43,11 +43,11 @@
 #botonGuardar {
     position: absolute;
     left: 550px;
-    top: 440px;
+    top: 640px;
 }
 
 #botonCancelar {
     position: absolute;
     left: 400px;
-    top: 440px;
+    top: 640px;
 }
