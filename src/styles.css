@@ -22,7 +22,8 @@
   align-content: center;
 }
 
-input {
+input,
+select {
   text-align: center;
   font-style: italic;
   border-radius: 20px;
