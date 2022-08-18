@@ -1,9 +1,101 @@
-<header id="navbar">
+<router-outlet></router-outlet>
+<header>
+  <div class="container">
+    <input type="checkbox" name="" id="check">
+
+    <div class="logo-container">
+      <h3 class="logo">
+        <a href="/home">
+          <img src="../../assets/img/logos/Logo GELABY NAVBAR.png" alt="Logo"> GELABY
+        </a>
+      </h3>
+    </div>
+
+    <div class="nav-btn">
+      <div class="nav-links">
+        <ul>
+          <li class="nav-link" style="--i: .6s">
+            <a href="/home">Inicio</a>
+          </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="list-teachers">Docente<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                  <a href="/list-teachers">Docentes</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="/list-career">Carreras</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Periodo Lectivo</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Asignaturas</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Cursos</a>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: .85s">
+            <a href="#">Laboratorios<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                  <a href="#">Ubicación</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Estado</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Laboratorios</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Visualizar Laboratorios</a>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: 1.1s">
+            <a href="#">Configuración<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link">
+                  <a href="#">Configurar Horas</a>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Control Laboratorios</a>
+                </li>
+                <div class="arrow"></div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="log-sign" style="--i: 1.8s">
+        <a href="#" class="btn transparent">Cerrar Sesión</a>
+        <!--<a href="#" class="btn solid">Sign up</a>-->
+      </div>
+    </div>
+
+    <div class="hamburger-menu-container">
+      <div class="hamburger-menu">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--<header>
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-3 col-3">
         <div class="logo">
-          <img src="../../assets/img/logos/Logo GELABY NAVBAR.png" alt="Logo">
         </div>
       </div>
       <div class="col-md-9 col-sm-9 col-9">
@@ -14,7 +106,7 @@
         </div>
         <div class="menu" [class.menuClass]="menuVariable">
           <ul>
-            <li>Inicio</li>
+            <li><a href="/home">Inicio</a></li>
             <li>Docente</li>
             <li>Laboratorio</li>
           </ul>
@@ -23,7 +115,4 @@
     </div>
   </div>
 </header>
-
-<div class="container m-5">
-  <router-outlet></router-outlet>
-</div>
+-->
