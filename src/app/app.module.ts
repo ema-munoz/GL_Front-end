@@ -4,6 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MessagesModule } from "primeng/messages";
+import { MessageModule } from "primeng/message";
+import { CreateSubjectComponent } from './subjects/create-subject/create-subject.component';
+import { ListSubjectComponent } from './subjects/list-subject/list-subject.component';
 
 //external
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,6 +34,22 @@ import { ListCarrerComponent } from './carrer/list-carrer/list-carrer.component'
 import { ListLabStatusComponent } from './lab-status/list-lab-status/list-lab-status.component';
 import { CreateLabStatusComponent } from './lab-status/create-lab-status/create-lab-status.component';
 import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-status.component';
+/* Laboratory */
+import { ListLaboratoryComponent } from './laboratory/list-laboratory/list-laboratory.component';
+import { CreateLaboratoryComponent } from './laboratory/create-laboratory/create-laboratory.component';
+import { EditLaboratoryComponent } from './laboratory/edit-laboratory/edit-laboratory.component';
+/* Course */
+import { EditCourseComponent } from './course/edit-course/edit-course.component';
+import { CreateCourseComponent } from './course/create-course/create-course.component';
+import { ListCourseComponent } from './course/list-course/list-course.component';
+/* Subject Teaching Detail */
+import { ListSubjectTeachingDetailComponent } from './subject-teaching-detail/list-subject-teaching-detail/list-subject-teaching-detail.component';
+import { CreateSubjectTeachingDetailComponent } from './subject-teaching-detail/create-subject-teaching-detail/create-subject-teaching-detail.component';
+import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/edit-subject-teaching-detail/edit-subject-teaching-detail.component';
+/* Lab Matter Detail */
+import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
+import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
+import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -54,6 +74,18 @@ import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-st
     ListLabStatusComponent,
     CreateLabStatusComponent,
     EditLabStatusComponent,
+    ListLaboratoryComponent,
+    CreateLaboratoryComponent,
+    EditLaboratoryComponent,
+    EditCourseComponent,
+    CreateCourseComponent,
+    ListCourseComponent,
+    ListSubjectTeachingDetailComponent,
+    CreateSubjectTeachingDetailComponent,
+    EditSubjectTeachingDetailComponent,
+    EditLabMatterDetailComponent,
+    CreateLabMatterDetailComponent,
+    ListLabMatterDetailComponent,
     //NavbarComponent
   ],
   imports: [
@@ -63,6 +95,8 @@ import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-st
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MessagesModule,
+    MessageModule,
     AppRoutingModule
   ],
   providers: [],

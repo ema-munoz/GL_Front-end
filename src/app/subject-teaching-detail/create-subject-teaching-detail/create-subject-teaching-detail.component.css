@@ -1,0 +1,125 @@
+#contenedor {
+    border: 15px solid #004aad;
+    border-radius: 5%;
+    width: 60%;
+    height: 150%;
+    max-width: 60%;
+    max-height: 130%;
+    left: 20.5%;
+    top: 12%;
+  }
+  #tituloGeneral {
+    position: absolute;
+    right: 580px;
+    top: 15px;
+  }
+  
+  #titulo {
+    width: 48%;
+    top: 20%;
+    left: 26%;
+  }
+  #fecha {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    width: 80%;
+  }
+  #horaInicio{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+  }
+  #horaFin{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+  }
+  #curso input[type=text], select {
+    position: absolute;
+    top: 56%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #cursoName{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #botonGuardar{
+    position: absolute;
+    left: 550px;
+    top: 727px;
+  }
+  #botonCancelar{
+    position: absolute;
+    left: 400px;
+    top: 727px;
+  }
+  #nasignatura{
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #asignatura{
+    position: absolute;
+    top: 76%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #detalle{
+    position: absolute;
+    top: 88%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #ndetalle{
+    position: absolute;
+    top: 82%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #teacher{
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #ndocente{
+    position: absolute;
+    top: 63%;
+    left: 10%;
+    border-radius: 60%;
+  }
+#dias{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#ndias{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    border-radius: 60%;
+}
+ 

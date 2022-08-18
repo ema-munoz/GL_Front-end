@@ -8,6 +8,9 @@ import { ResponseModel } from '../models/response.model';
   providedIn: 'root'
 })
 export class CareerHttpService {
+  navigate(arg0: any[]) {
+    throw new Error('Method not implemented.');
+  }
   API_URL: string;
 
   constructor( private httpClient:HttpClient) { 
