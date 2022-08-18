@@ -32,6 +32,10 @@ import { ListCarrerComponent } from './carrer/list-carrer/list-carrer.component'
 import { ListLabStatusComponent } from './lab-status/list-lab-status/list-lab-status.component';
 import { CreateLabStatusComponent } from './lab-status/create-lab-status/create-lab-status.component';
 import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-status.component';
+/* Laboratory */
+import { ListLaboratoryComponent } from './laboratory/list-laboratory/list-laboratory.component';
+import { CreateLaboratoryComponent } from './laboratory/create-laboratory/create-laboratory.component';
+import { EditLaboratoryComponent } from './laboratory/edit-laboratory/edit-laboratory.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -58,6 +62,9 @@ import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-st
     ListLabStatusComponent,
     CreateLabStatusComponent,
     EditLabStatusComponent,
+    ListLaboratoryComponent,
+    CreateLaboratoryComponent,
+    EditLaboratoryComponent,
     //NavbarComponent
   ],
   imports: [
