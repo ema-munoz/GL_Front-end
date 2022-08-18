@@ -14,6 +14,10 @@ import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.com
 import { CreateMatterComponent } from './matter/create-matter/create-matter.component';
 import { EditMatterComponent } from './matter/edit-matter/edit-matter.component';
 import { ListMatterComponent } from './matter/list-matter/list-matter.component';
+/* Carrer */
+import { CreateCarrerComponent } from './carrer/create-carrer/create-carrer.component';
+import { EditCarrerComponent } from './carrer/edit-carrer/edit-carrer.component';
+import { ListCarrerComponent } from './carrer/list-carrer/list-carrer.component';
 
 //import { NavbarComponent } from './navbar/navbar.component';
 
@@ -32,6 +36,10 @@ const routes: Routes = [
   {path: 'create-matter', component: CreateMatterComponent},
   {path: 'list-matter', component: ListMatterComponent},
   {path: 'edit-matter', component: EditMatterComponent},
+  /*Carrer*/
+  {path: 'create-carrer', component: CreateCarrerComponent},
+  {path: 'list-carrer', component: ListCarrerComponent},
+  {path: 'edit-carrer', component: EditCarrerComponent},
 
 
   //{path: 'navbar', component: NavbarComponent},
