@@ -33,7 +33,7 @@ export class EditLaboratoryComponent implements OnInit {
         this.myForm = new FormGroup({
         name: new FormControl(result.data.name, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]),
         capacity: new FormControl(result.data.acronym, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]),
-        stateLaboratoryId: new FormControl(result.data.semesters, [Validators.required, Validators.min(1), Validators.max(10)]),
+        stateLaboratory: new FormControl(result.data.semesters, [Validators.required, Validators.min(1), Validators.max(10)]),
       })}
     )
   }
@@ -44,7 +44,7 @@ export class EditLaboratoryComponent implements OnInit {
       id: [null],
       name: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]],
       capacity: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]],
-      stateLaboratoryId: [null, [Validators.required, Validators.min(1), Validators.max(10)]]
+      stateLaboratory: [null, [Validators.required, Validators.min(1), Validators.max(10)]]
     })
   }
 
@@ -92,7 +92,7 @@ export class EditLaboratoryComponent implements OnInit {
     return this.myForm.controls['capacity'];
   }
 
-  get stateLaboratoryIdField() {
+  get stateLaboratoryField() {
     return this.myForm.controls['stateLaboratoryId'];
   }
 

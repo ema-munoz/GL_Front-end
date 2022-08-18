@@ -31,7 +31,7 @@ export class EditMatterComponent implements OnInit {
         console.log(result.data.name)
         this.myForm = new FormGroup({
         name: new FormControl(result.data.name, [Validators.required, Validators.minLength(2), Validators.maxLength(100)]),
-        career: new FormControl(result.data.acronym, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]),
+        career: new FormControl(result.data.career, [Validators.required, Validators.minLength(2), Validators.maxLength(5)]),
       })}
     )
   }

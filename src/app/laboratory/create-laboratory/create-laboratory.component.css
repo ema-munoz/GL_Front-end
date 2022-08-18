@@ -38,14 +38,14 @@
 
   }
 
-  #estadoLaboratorio select {
+  /* #estadoLaboratorio select {
   text-align: center;
   font-style: italic;
   border-radius: 20px;
   border-bottom: 6px solid coral;
   transition: all .5s ease;
   width: 80%;
-}
+} */
 
 select:focus {
   border-bottom: 6px solid #004aad;
