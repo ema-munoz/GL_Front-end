@@ -1,32 +1,32 @@
 <div id="contenedor">
 
     <div id="tituloGeneral">
-        <h3> Editar Estado Laboratorio</h3>
+        <h1>{{title}}</h1>
     </div>
 
-    <div id="nombre">
-        <label>Nombre</label>
-        <input type="nombre" name="" required>
-    </div>
+    <form [formGroup]="myForm">
+        <div id="formulario">
+            <div id="estado" class="field">
+                <label for="state">Estado</label>
+                <input pInputText type="text" placeholder="Escriba el estado del laboratorio"
+                    formControlName="state">
+                <p-message *ngIf="stateField.errors?.['required']" severity="error"
+                    text="Este campo es obligatorio"></p-message>
+                <i *ngIf="stateField.valid" class="pi pi-check-circle"></i>
+            </div>
 
-    <div id="descripcion">
-        <label>Descripción</label>
-        <input type="descripcion" name="" required>
-    </div>
-
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
-    </div>
-
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
+            <div id="descripcion" class="field">
+                <label for="description">Descripción:</label>
+                <input pInputText type="text" placeholder="Escriba una descripcion." formControlName="description">
+            </div>
+            
+            <div id="botonGuardar" (click)="update()">
+                <button type="submit">
+                    <div id="iconoBotonGuardar">
+                        <img src="../../assets/img/icons/white/save.png">
+                    </div>Guardar
+                </button>
+            </div>
+        </div>
+    </form>
 </div>
