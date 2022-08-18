@@ -1,8 +1,7 @@
-export class Subject {
-    id?: number;
-    name: string;
+import { CareersModel } from "./career.model";
 
-    constructor(name: string) {
-        this.name = name;
-    }
+export interface SubjectModel {
+    id?: number;
+    name?: string;
+    career?: CareersModel;
 }

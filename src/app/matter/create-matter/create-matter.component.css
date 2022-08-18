@@ -18,7 +18,7 @@
   width: 80%;
 }
 
-#carrer input[type=text], select {
+/* #carrer input[type=text], select {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -26,7 +26,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
-}
+} */
 #carrerName{
   position: absolute;
   top: 52%;
