@@ -39,6 +39,7 @@ import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/ed
 import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
 import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
+import { LogoutComponent } from './logout/logout.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -46,12 +47,13 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent, canActivate:[ExpenseGuard]},
   {path: 'botones', component: BotonesComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
   /* Teachers  */
   {path: 'create-teachers', component: CreateTeachersComponent},
   {path: 'list-teachers', component: ListTeachersComponent},
   {path: 'view-teachers', component: ViewTeachersComponent},
-  {path: 'edit-teachers', component: EditTeachersComponent},
+  {path: 'edit-teachers/:id', component: EditTeachersComponent},
   /*Subjects*/
   {path: 'create-subject', component: CreateMatterComponent},
   {path: 'list-subject', component: ListMatterComponent},

@@ -1,6 +1,6 @@
 <div id="contenedor">
   <div id="tituloGeneral">
-    <h1>Docente</h1>
+    <h1>{{title}}</h1>
   </div>
 
   <div id="tabla">
@@ -17,23 +17,24 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>.</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let teacher of teachers">
+          <td>{{teacher.identificationCard}}</td>
+          <td>{{teacher.names}}</td>
+          <td>{{teacher.surnames}}</td>
+          <td>{{teacher.institutionalEmail}}</td>
+          <td>{{teacher.phone}}</td>
           <td>
             <div id="botonEditarP">
               <button type="submit">
+                <a routerLink="/edit-teachers/{{teacher.id}}">
                 <div id="iconoBotonEditarP">
                   <img src="../../assets/img/icons/white/edit.png">
-                </div>E
+                </div>E</a>
               </button>
             </div>
           </td>
           <td>
-            <div id="botonEliminarP">
+            <div id="botonEliminarP" (click)="destroy(teacher.id!)">
               <button type="submit">
                 <div id="iconoBotonEliminarP">
                   <img src="../../assets/img/icons/white/trash.png">
