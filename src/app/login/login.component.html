@@ -16,6 +16,20 @@
   <div id="titulo">
     <h4>Iniciar Sesión GELABY</h4>
   </div>
+  <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)">
+    <div class="form-group">
+      <div id="email">
+        <label>EMAIL</label>
+        <input type="email" name="" formControlName="email" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div id="password">
+        <label>CONTRASEÑA</label>
+        <input type="password" name="" formControlName="password" required>
+      </div>
+    </div>
+    <!--
 
   <div id="email">
     <label>EMAIL</label>
@@ -26,7 +40,7 @@
     <label>CONTRASEÑA</label>
     <input type="password" name="" required>
   </div>
-  <!--
+  
   <div id="ojo">
     <div class="visto" style="display: block;">
       <button id="visto" type="button" (click)="cambio()">
@@ -40,15 +54,15 @@
     </div>
   </div>
 -->
-  <div id="boton">
-    <button type="submit">Iniciar Sesión</button>
-  </div>
+    <div id="boton">
+      <button type="submit">Iniciar Sesión</button>
+    </div>
 
-  <div id="RecuperarContrasenia">
-    <p>Para recuperar contraseña hacer click
-      <a href="/forgotPassword"> AQUÍ </a>
-    </p>
-  </div>
-</div>
+    <div id="RecuperarContrasenia">
+      <p>Para recuperar contraseña hacer click
+        <a href="/forgotPassword"> AQUÍ </a>
+      </p>
+    </div>
 
-<script src="/js/botones.js"></script>
+
+    <script src="/js/botones.js"></script>

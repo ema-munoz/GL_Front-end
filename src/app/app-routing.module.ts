@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BotonesComponent } from './botones/botones.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ExpenseGuard } from './guards/auth.guards';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
@@ -25,8 +26,8 @@ import { ListLabStatusComponent } from './lab-status/list-lab-status/list-lab-st
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent, canActivate:[ExpenseGuard]},
   {path: 'botones', component: BotonesComponent},
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
