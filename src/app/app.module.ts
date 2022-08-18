@@ -4,8 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreateSubjectComponent } from './subjects/create-subject/create-subject.component';
-import { ListSubjectComponent } from './subjects/list-subject/list-subject.component';
 
 //external
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -39,8 +37,6 @@ import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-st
 @NgModule({
   declarations: [
     AppComponent,
-    CreateSubjectComponent,
-    ListSubjectComponent,
     HomeComponent,
     ForgotPasswordComponent,
     LoginComponent,
