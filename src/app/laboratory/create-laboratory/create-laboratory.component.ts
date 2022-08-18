@@ -53,11 +53,11 @@ export class CreateLaboratoryComponent implements OnInit {
     return this.myForm.controls['name'];
   }
 
-  get acronymField() {
+  get capacityField() {
     return this.myForm.controls['capacity'];
   }
 
-  get semesterField() {
+  get stateLaboratoryIdField() {
     return this.myForm.controls['stateLaboratoryId'];
   }
 

@@ -6,10 +6,12 @@
     left: 20.5%;
     top: 12%;
   }
+  /* titulo general */
   #tituloGeneral {
     margin-right: 580px;
     margin-top: 35px;
   }
+  /* boton crear nuevo */
   #botonCrearNuevo{
     position: absolute;
     left: 725px;
@@ -60,7 +62,7 @@
     background: #d0dafd;
     color: #339;
   }
-  
+    /* Botones */
   #botonEliminarP{
     background-color: black;
     margin-top: -2.0%;
