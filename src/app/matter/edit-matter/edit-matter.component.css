@@ -14,20 +14,20 @@
 }
 
 #nombre,
-#carrerName{
+#carrera{
   position: absolute;
   top: 20%;
   left: 10%;
   width: 80%;
 }
 
-#carrerName{
+#carrera{
   top: 50%;
 }
 
 #botonGuardar{
   position: absolute;
-  left: 25%;
+  left: 20%;
   top: 80%;
 }
 #botonCancelar{

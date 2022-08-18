@@ -14,8 +14,8 @@
       <p-message *ngIf="nameField.errors?.['maxlength']" severity="error" text="Máximo 100 caracteres"></p-message>
       <i *ngIf="nameField.valid" class="pi pi-check-circle"></i>
     </div>
-    <br>
-    <div id="carrerName">
+
+    <div id="carrera">
       <label for="carrerName">Carrera</label>
       <input pInputText id="carrerName" type="text" name="carrerName" formControlName="carrerName">
       <p-message *ngIf="careerField.errors?.['required']" severity="error" text="Este campo es obligatorio">
@@ -24,7 +24,7 @@
       </p-message>
       <p-message *ngIf="careerField.errors?.['maxlength']" severity="error" text="Máximo 5 caracteres"></p-message>
       <i *ngIf="careerField.valid" class="pi pi-check-circle"></i>
-
+    </div>
       <div id="botonGuardar" (click)="update()">
         <button type="submit">
           <div id="iconoBotonGuardar">
@@ -42,6 +42,5 @@
           </a>
         </button>
       </div>
-    </div>
   </form>
 </div>

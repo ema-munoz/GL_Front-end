@@ -63,7 +63,7 @@ const routes: Routes = [
   /*Subjects*/
   {path: 'create-subject', component: CreateMatterComponent, canActivate:[ExpenseGuard]},
   {path: 'list-subject', component: ListMatterComponent, canActivate:[ExpenseGuard]},
-  {path: 'edit-subject/:id', component: EditMatterComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-subject', component: EditMatterComponent, canActivate:[ExpenseGuard]},
 
   /*Carrer*/
   {path: 'create-carrer', component: CreateCarrerComponent, canActivate:[ExpenseGuard]},
