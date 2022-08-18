@@ -6,18 +6,12 @@
   left: 20.5%;
   top: 12%;
 }
-#tituloGeneral {
+#titleGeneral {
   position: absolute;
   right: 580px;
   top: 45px;
 }
-
-#titulo {
-  width: 48%;
-  top: 20%;
-  left: 26%;
-}
-#nombre {
+#name {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -39,12 +33,12 @@
   left: 10%;
   border-radius: 60%;
 }
-#botonGuardar{
+#buttonSave{
   position: absolute;
   left: 550px;
   top: 400px;
 }
-#botonCancelar{
+#buttonCancel{
   position: absolute;
   left: 400px;
   top: 400px;

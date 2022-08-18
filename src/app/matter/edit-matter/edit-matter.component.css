@@ -1,51 +1,45 @@
 #contenedor {
-    border: 15px solid #004aad;
-    border-radius: 5%;
-    max-width: 60%;
-    max-height: 85%;
-    left: 20.5%;
-    top: 12%;
-  }
-  #tituloGeneral {
-    position: absolute;
-    right: 580px;
-    top: 45px;
-  }
-  
-  #titulo {
-    width: 48%;
-    top: 20%;
-    left: 26%;
-  }
-  #nombre {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 80%;
-  }
-  
-  #carrer input[type=text], select {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  #carrerName{
-    position: absolute;
-    top: 52%;
-    left: 10%;
-    border-radius: 60%;
-  }
-  #botonGuardar{
-    position: absolute;
-    left: 550px;
-    top: 400px;
-  }
-  #botonCancelar{
-    position: absolute;
-    left: 400px;
-    top: 400px;
-  }
+  border: 15px solid #004aad;
+  border-radius: 5%;
+  max-width: 60%;
+  max-height: 85%;
+  left: 20.5%;
+  top: 12%;
+}
+#titleGeneral {
+  position: absolute;
+  right: 580px;
+  top: 45px;
+}
+#name {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+}
+
+#carrer input[type=text], select {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#carrerName{
+  position: absolute;
+  top: 52%;
+  left: 10%;
+  border-radius: 60%;
+}
+#buttonSave{
+  position: absolute;
+  left: 550px;
+  top: 400px;
+}
+#buttonCancel{
+  position: absolute;
+  left: 400px;
+  top: 400px;
+}
