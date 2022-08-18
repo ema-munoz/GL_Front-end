@@ -61,11 +61,15 @@
     color: #339;
   }
   
-  #botonEliminarP,
+  #botonEliminarP{
+    background-color: black;
+    margin-top: -2.0%;
+    margin-left: 28%;
+  }
   #botonEditarP{
     background-color: black;
-    margin-top: -2.2%;
-    margin-left: 5%;
+    margin-top: -2.0%;
+    margin-left: 42%;
   }
   
   
