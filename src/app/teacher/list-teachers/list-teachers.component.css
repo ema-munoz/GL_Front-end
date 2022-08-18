@@ -31,8 +31,7 @@
 
 table {
   font-size: 20px;
-  margin: 45px;
-  width: 1215px;
+  width: 100%;
   text-align: center;
   border-collapse: collapse;
   table-layout: fixed;
