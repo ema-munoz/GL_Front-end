@@ -1,6 +1,4 @@
-/*import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ToastrService } from 'ngx-toastr';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,17 +7,9 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class NavbarComponent implements OnInit {
 
-constructor(private modalService: NgbModal, private toastr: ToastrService) {
-
-}
-
-openModal(content: any) {
-    this.modalService.open(content, {});
-  }
-
+  constructor() { }
 
   ngOnInit(): void {
   }
 
 }
-*/
