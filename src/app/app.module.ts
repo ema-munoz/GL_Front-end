@@ -13,7 +13,12 @@ import { HomeComponent } from './home/home.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { BotonesComponent } from './botones/botones.component';
+
+/* Teachers */
 import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
+import { CreateTeachersComponent } from './teacher/create-teachers/create-teachers.component';
+import { EditTeachersComponent } from './teacher/edit-teachers/edit-teachers.component';
+import { ViewTeachersComponent } from './teacher/view-teachers/view-teachers.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -26,6 +31,9 @@ import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.com
     LoginComponent,
     BotonesComponent,
     ListTeachersComponent,
+    CreateTeachersComponent,
+    EditTeachersComponent,
+    ViewTeachersComponent,
     //NavbarComponent
   ],
   imports: [

@@ -84,6 +84,19 @@ button {
   border-color: transparent;
 }
 
+#botonImportar,
+#botonExportar,
+#botonPlantilla,
+#botonCrearNuevo,
+#botonVerMas,
+#botonGuardar,
+#botonEliminar,
+#botonVolver,
+#botonEditar,
+#botonBuscar {
+position: absolute;
+}
+
 #botonImportar button,
 #botonExportar button,
 #botonPlantilla button,
