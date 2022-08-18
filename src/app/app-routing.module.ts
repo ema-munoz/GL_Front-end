@@ -29,18 +29,18 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
   /* Teachers  */
-  {path: 'create-teachers', component: CreateTeachersComponent},
-  {path: 'list-teachers', component: ListTeachersComponent},
-  {path: 'view-teachers', component: ViewTeachersComponent},
-  {path: 'edit-teachers', component: EditTeachersComponent},
+  {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-teachers', component: ListTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'view-teachers', component: ViewTeachersComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-teachers', component: EditTeachersComponent, canActivate:[ExpenseGuard]},
   /*Matter*/
-  {path: 'create-matter', component: CreateMatterComponent},
-  {path: 'list-matter', component: ListMatterComponent},
-  {path: 'edit-matter', component: EditMatterComponent},
+  {path: 'create-matter', component: CreateMatterComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-matter', component: ListMatterComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-matter', component: EditMatterComponent, canActivate:[ExpenseGuard]},
   /*Carrer*/
-  {path: 'create-carrer', component: CreateCarrerComponent},
-  {path: 'list-carrer', component: ListCarrerComponent},
-  {path: 'edit-carrer', component: EditCarrerComponent},
+  {path: 'create-carrer', component: CreateCarrerComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-carrer', component: ListCarrerComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-carrer', component: EditCarrerComponent, canActivate:[ExpenseGuard]},
 
 
   //{path: 'navbar', component: NavbarComponent},
