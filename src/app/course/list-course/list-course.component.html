@@ -1,15 +1,16 @@
 <div id="contenedor">
     <div id="tituloGeneral">
-      <h1>Carreras</h1>
+      <h1>{{title}}</h1>
     </div>
-  
   </div>
   
   <div id="botonCrearNuevo">
     <button type="submit">
+      <a routerLink="/create-course">
       <div id="iconoBotonCrearNuevo">
         <img src="../../assets/img/icons/white/plus.png">
       </div>Nuevo
+      </a>
     </button>
   </div>
   
@@ -24,18 +25,18 @@
           <th scope="col">Carrera</th>
           <th scope="col">Paralelo</th>
           <th scope="col">Jornada</th>
-          <th scope="col">Docente</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>.</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let course of courses">
+          <td>{{course.id}}</td>
+          <td>{{course.name}}</td>
+          <td>{{course.numberStudents}}</td>
+          <td>{{course.semesters}}</td>
+          <td>{{course.career}</td>
+          <td>{{course.parallel}}</td>
+          <td>{{course.shift}}</td>
           <td>
             <div id="botonEditarP">
               <button type="submit">
