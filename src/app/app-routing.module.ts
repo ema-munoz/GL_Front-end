@@ -90,9 +90,9 @@ const routes: Routes = [
   {path: 'edit-course', component: EditCourseComponent, canActivate:[ExpenseGuard]},
 
   /*Subject Teaching detail*/
-   {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
-   {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
-   {path: 'edit-subject-teaching-detail/:id', component: EditSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+  {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+  {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-subject-teaching-detail/:id', component: EditSubjectTeachingDetailComponent, canActivate:[ExpenseGuard]},
 
   /*Lab Matter Detail*/
   {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent, canActivate:[ExpenseGuard]},
