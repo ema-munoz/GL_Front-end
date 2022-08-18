@@ -36,6 +36,18 @@ import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-st
 import { ListLaboratoryComponent } from './laboratory/list-laboratory/list-laboratory.component';
 import { CreateLaboratoryComponent } from './laboratory/create-laboratory/create-laboratory.component';
 import { EditLaboratoryComponent } from './laboratory/edit-laboratory/edit-laboratory.component';
+/* Course */
+import { EditCourseComponent } from './course/edit-course/edit-course.component';
+import { CreateCourseComponent } from './course/create-course/create-course.component';
+import { ListCourseComponent } from './course/list-course/list-course.component';
+/* Subject Teaching Detail */
+import { ListSubjectTeachingDetailComponent } from './subject-teaching-detail/list-subject-teaching-detail/list-subject-teaching-detail.component';
+import { CreateSubjectTeachingDetailComponent } from './subject-teaching-detail/create-subject-teaching-detail/create-subject-teaching-detail.component';
+import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/edit-subject-teaching-detail/edit-subject-teaching-detail.component';
+/* Lab Matter Detail */
+import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
+import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
+import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -65,6 +77,15 @@ import { EditLaboratoryComponent } from './laboratory/edit-laboratory/edit-labor
     ListLaboratoryComponent,
     CreateLaboratoryComponent,
     EditLaboratoryComponent,
+    EditCourseComponent,
+    CreateCourseComponent,
+    ListCourseComponent,
+    ListSubjectTeachingDetailComponent,
+    CreateSubjectTeachingDetailComponent,
+    EditSubjectTeachingDetailComponent,
+    EditLabMatterDetailComponent,
+    CreateLabMatterDetailComponent,
+    ListLabMatterDetailComponent,
     //NavbarComponent
   ],
   imports: [

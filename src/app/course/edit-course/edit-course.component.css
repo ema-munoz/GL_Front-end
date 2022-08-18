@@ -1,0 +1,103 @@
+#contenedor {
+    border: 15px solid #004aad;
+    border-radius: 5%;
+    max-width: 60%;
+    max-height: 125%;
+    left: 20.5%;
+    top: 12%;
+  }
+  #tituloGeneral {
+    position: absolute;
+    right: 580px;
+    top: 15px;
+  }
+  
+  #titulo {
+    width: 48%;
+    top: 20%;
+    left: 26%;
+  }
+  #nombre {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    width: 80%;
+  }
+  #numero {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    width: 80%;
+  }
+  #semestres input[type=text], select {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #semestresName{
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #botonGuardar{
+    position: absolute;
+    left: 550px;
+    top: 550px;
+  }
+  #botonCancelar{
+    position: absolute;
+    left: 400px;
+    top: 550px;
+  }
+  #nparalelo{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #paralelo{
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #shift{
+    position: absolute;
+    top: 74%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #njornada{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    border-radius: 60%;
+  }
+  #teacher{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  #ndocente{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    border-radius: 60%;
+  }
+
+ 

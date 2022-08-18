@@ -27,6 +27,18 @@ import { ListLabStatusComponent } from './lab-status/list-lab-status/list-lab-st
 import { EditLaboratoryComponent } from './laboratory/edit-laboratory/edit-laboratory.component';
 import { ListLaboratoryComponent } from './laboratory/list-laboratory/list-laboratory.component';
 import { CreateLaboratoryComponent } from './laboratory/create-laboratory/create-laboratory.component';
+  /*Course*/
+import { CreateCourseComponent } from './course/create-course/create-course.component';
+import { ListCourseComponent } from './course/list-course/list-course.component';
+import { EditCourseComponent } from './course/edit-course/edit-course.component';
+/*Subject Teaching detail*/
+import { CreateSubjectTeachingDetailComponent } from './subject-teaching-detail/create-subject-teaching-detail/create-subject-teaching-detail.component';
+import { ListSubjectTeachingDetailComponent } from './subject-teaching-detail/list-subject-teaching-detail/list-subject-teaching-detail.component';
+import { EditSubjectTeachingDetailComponent } from './subject-teaching-detail/edit-subject-teaching-detail/edit-subject-teaching-detail.component';
+ /*Lab Matter Detail*/
+import { CreateLabMatterDetailComponent } from './lab-matter-detail/create-lab-matter-detail/create-lab-matter-detail.component';
+import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matter-detail/list-lab-matter-detail.component';
+import { EditLabMatterDetailComponent } from './lab-matter-detail/edit-lab-matter-detail/edit-lab-matter-detail.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -53,10 +65,26 @@ const routes: Routes = [
   {path: 'create-lab-status', component: CreateLabStatusComponent},
   {path: 'list-lab-status', component: ListLabStatusComponent},
   {path: 'edit-lab-status', component: EditLabStatusComponent},
-  /*Lab Status*/
+
+  /*Laboratory*/
   {path: 'create-laboratory', component: CreateLaboratoryComponent},
   {path: 'list-laboratory', component: ListLaboratoryComponent},
   {path: 'edit-laboratory', component: EditLaboratoryComponent},
+
+  /*Course*/
+  {path: 'create-course', component: CreateCourseComponent},
+  {path: 'list-course', component: ListCourseComponent},
+  {path: 'edit-course', component: EditCourseComponent},
+
+   /*Subject Teaching detail*/
+   {path: 'create-subject-teaching-detail', component: CreateSubjectTeachingDetailComponent},
+   {path: 'list-subject-teaching-detail', component: ListSubjectTeachingDetailComponent},
+   {path: 'edit-subject-teaching-detail', component: EditSubjectTeachingDetailComponent},
+
+    /*Lab Matter Detail*/
+  {path: 'create-lab-matter-detail', component: CreateLabMatterDetailComponent},
+  {path: 'list-lab-matter-detail', component: ListLabMatterDetailComponent},
+  {path: 'edit-lab-matter-detail', component: EditLabMatterDetailComponent},
 
 
 
