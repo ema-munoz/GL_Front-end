@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BotonesComponent } from './botones/botones.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
+import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 import { LoginComponent } from './login/login.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'botones', component: BotonesComponent},
   {path: 'login', component: LoginComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
+  {path: 'list-teachers', component: ListTeachersComponent},
   //{path: 'navbar', component: NavbarComponent},
   /*{path: 'navbar',
   loadChildren: ()=>

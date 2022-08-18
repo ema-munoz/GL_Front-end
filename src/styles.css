@@ -73,7 +73,8 @@ img {
 
 /*  BOTONES  */
 button {
-  background-color: black;
+  background-color: #004aad;
+  font-weight: bolder;
   position: absolute;
   text-align: center;
   cursor: pointer;
@@ -93,7 +94,8 @@ button {
 #botonVolver button,
 #botonEditar button,
 #botonBuscar button {
-    text-align: right;
+  font-weight: normal;
+  text-align: right;
 }
 
 #iconoBotonImportar,
@@ -137,7 +139,7 @@ button {
 #botonImportar button,
 #botonVerMas button,
 #botonEditar button,
-#botonBuscar button{
+#botonBuscar button {
   border-right: 3px solid transparent;
   background-color: #4a7fbd;
 }

@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { BotonesComponent } from './botones/botones.component';
+import { ListTeachersComponent } from './teacher/list-teachers/list-teachers.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { BotonesComponent } from './botones/botones.component';
     ForgotPasswordComponent,
     LoginComponent,
     BotonesComponent,
+    ListTeachersComponent,
     //NavbarComponent
   ],
   imports: [
