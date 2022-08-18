@@ -23,27 +23,11 @@
     left: 10%;
     width: 80%;
   }
-  #siglas {
+  #descripcion {
     position: absolute;
     top: 42%;
     left: 10%;
     width: 80%;
-  }
-  
-  #semestres input[type=text], select {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  #semestresName{
-    position: absolute;
-    top: 62%;
-    left: 10%;
-    border-radius: 60%;
   }
   #botonGuardar{
     position: absolute;

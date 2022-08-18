@@ -18,7 +18,10 @@ import { ListMatterComponent } from './matter/list-matter/list-matter.component'
 import { CreateCarrerComponent } from './carrer/create-carrer/create-carrer.component';
 import { EditCarrerComponent } from './carrer/edit-carrer/edit-carrer.component';
 import { ListCarrerComponent } from './carrer/list-carrer/list-carrer.component';
-
+/* Lab Status */
+import { CreateLabStatusComponent } from './lab-status/create-lab-status/create-lab-status.component';
+import { EditLabStatusComponent } from './lab-status/edit-lab-status/edit-lab-status.component';
+import { ListLabStatusComponent } from './lab-status/list-lab-status/list-lab-status.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
@@ -40,6 +43,10 @@ const routes: Routes = [
   {path: 'create-carrer', component: CreateCarrerComponent},
   {path: 'list-carrer', component: ListCarrerComponent},
   {path: 'edit-carrer', component: EditCarrerComponent},
+  /*Lab Status*/
+  {path: 'create-lab-status', component: CreateLabStatusComponent},
+  {path: 'list-lab-status', component: ListLabStatusComponent},
+  {path: 'edit-lab-status', component: EditLabStatusComponent},
 
 
   //{path: 'navbar', component: NavbarComponent},
