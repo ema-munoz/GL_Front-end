@@ -17,6 +17,7 @@
   left: 40%;
 }
 
+/* tabla */
 #tabla {
   background-color: #ececec;
   width: 100%;
@@ -31,8 +32,8 @@
 table {
   font-size: 20px;
   margin: 45px;
-  width: 480px;
-  text-align: left;
+  width: 1215px;
+  text-align: center;
   border-collapse: collapse;
   table-layout: fixed;
   border-collapse: collapse;
@@ -40,7 +41,7 @@ table {
 }
 
 th {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
   padding: 8px;
   background: #b9c9fe;
@@ -50,6 +51,7 @@ th {
 }
 
 td {
+  font-size: 20px;
   padding: 8px;
   background: #e8edff;
   border-bottom: 1px solid #fff;
@@ -60,4 +62,11 @@ td {
 tr:hover td {
   background: #d0dafd;
   color: #339;
+}
+
+#botonEliminarP,
+#botonEditarP{
+  background-color: black;
+  margin-top: -1.5%;
+  margin-left: 5%;
 }
