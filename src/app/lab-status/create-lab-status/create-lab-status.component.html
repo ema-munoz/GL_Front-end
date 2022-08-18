@@ -1,32 +1,33 @@
-<div id="contenedor">
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div id="contenedor">
+        <div id="tituloGeneral">
+            <h3>Crear Estado Laboratorio</h3>
+        </div>
 
-    <div id="tituloGeneral">
-        <h3>Crear Estado Laboratorio</h3>
-    </div>
+        <div id="nombre">
+            <label>Nombre</label>
+            <input type="nombre" name="" required>
+        </div>
 
-    <div id="nombre">
-        <label>Nombre</label>
-        <input type="nombre" name="" required>
-    </div>
+        <div id="descripcion">
+            <label>Descripción</label>
+            <input type="descripcion" name="" required>
+        </div>
 
-    <div id="descripcion">
-        <label>Descripción</label>
-        <input type="descripcion" name="" required>
-    </div>
+        <div id="botonGuardar">
+            <button type="submit">
+                <div id="iconoBotonGuardar">
+                    <img src="../../assets/img/icons/white/save.png">
+                </div>Guardar
+            </button>
+        </div>
 
-    <div id="botonGuardar">
-        <button type="submit">
-            <div id="iconoBotonGuardar">
-                <img src="../../assets/img/icons/white/save.png">
-            </div>Guardar
-        </button>
+        <div id="botonCancelar">
+            <button type="submit">
+                <div id="iconoBotonCancelar">
+                    <img src="../../assets/img/icons/white/cross.png">
+                </div>Cancelar
+            </button>
+        </div>
     </div>
-
-    <div id="botonCancelar">
-        <button type="submit">
-            <div id="iconoBotonCancelar">
-                <img src="../../assets/img/icons/white/cross.png">
-            </div>Cancelar
-        </button>
-    </div>
-</div>
+</form>

@@ -57,8 +57,6 @@ import { ListLabMatterDetailComponent } from './lab-matter-detail/list-lab-matte
 @NgModule({
   declarations: [
     AppComponent,
-    CreateSubjectComponent,
-    ListSubjectComponent,
     HomeComponent,
     ForgotPasswordComponent,
     LoginComponent,
