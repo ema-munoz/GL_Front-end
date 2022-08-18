@@ -3,11 +3,10 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
 import { CourseModel } from 'src/app/models/course.model';
 import { ListSubjectTeacherModel } from 'src/app/models/listSubjectTeacher.model';
-import { Subject } from 'src/app/models/subject.model';
 import { TeachersModel } from 'src/app/models/teacher.model';
 import { CourseHttpService } from 'src/app/services/course.service';
 import { ListSubjectTeacherHttpService } from 'src/app/services/listSubjectTeacher.service';
-import { SubjectService } from 'src/app/services/subject.service';
+import { SubjectHttpService } from 'src/app/services/subject.service';
 import { TeacherHttpService } from 'src/app/services/teacher.service';
 
 @Component({
@@ -20,7 +19,7 @@ export class CreateSubjectTeachingDetailComponent implements OnInit {
   listSubjectTeachers: ListSubjectTeacherModel[] = [];
   courses: CourseModel[] = [];
   teacher: TeachersModel[] = [];
-  subject: Subject[] = [];
+  subject: SubjectHttpService[] = [];
 
   myForm: FormGroup;
 
@@ -30,7 +29,7 @@ export class CreateSubjectTeachingDetailComponent implements OnInit {
     private listSubjectTeacherHttpService: ListSubjectTeacherHttpService,
     private teacherHttpService: TeacherHttpService,
     private courseHttpService: CourseHttpService,
-    private subjectHttpService: SubjectService,
+    private subjectHttpService: SubjectHttpService,
     private router: ActivatedRoute,
     private formBuilder: FormBuilder,
     private route: Router

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ListSubjectTeacherModel } from 'src/app/models/listSubjectTeacher.model';
-import { Subject } from 'src/app/models/subject.model';
 import { TeachersModel } from 'src/app/models/teacher.model';
 import { ListSubjectTeacherHttpService } from 'src/app/services/listSubjectTeacher.service';
-import { SubjectService } from 'src/app/services/subject.service';
+import { SubjectHttpService } from 'src/app/services/subject.service';
 import { TeacherHttpService } from 'src/app/services/teacher.service';
 
 @Component({
@@ -16,16 +15,16 @@ export class ListSubjectTeachingDetailComponent implements OnInit {
 
   listSubjectTeachers: ListSubjectTeacherModel[] = [];
   teacher: TeachersModel[] = [];
-  subject: Subject[] = [];
+  subject: SubjectHttpService[] = [];
 
   title: string = 'Distribución Docente';
 
   constructor(
     private listSubjectTeacherHttpService: ListSubjectTeacherHttpService,
     private teacherHttpService: TeacherHttpService,
-    private subjectHttpService: SubjectService,
+    private subjectHttpService: SubjectHttpService,
     private formBuilder: FormBuilder
-  ) { 
+  ) {
   }
 
   ngOnInit(): void {

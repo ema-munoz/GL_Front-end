@@ -1,4 +1,4 @@
-import { Subject } from "./subject.model";
+import { SubjectModel } from "./subject.model";
 import { TeachersModel } from "./teacher.model";
 
 export interface ListSubjectTeacherModel {
