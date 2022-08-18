@@ -73,7 +73,8 @@ img {
 
 /*  BOTONES  */
 button {
-  background-color: black;
+  background-color: #004aad;
+  font-weight: bolder;
   position: absolute;
   text-align: center;
   cursor: pointer;
@@ -81,6 +82,22 @@ button {
   border-radius: 20px;
   color: white;
   border-color: transparent;
+}
+
+#botonImportar,
+#botonExportar,
+#botonPlantilla,
+#botonCrearNuevo,
+#botonVerMas,
+#botonGuardar,
+#botonEliminar,
+#botonVolver,
+#botonEditar,
+#botonBuscar,
+#botonCancelar,
+#botonEditarP,
+#botonEliminarP {
+  position: absolute;
 }
 
 #botonImportar button,
@@ -92,8 +109,12 @@ button {
 #botonEliminar button,
 #botonVolver button,
 #botonEditar button,
-#botonBuscar button {
-    text-align: right;
+#botonBuscar button,
+#botonCancelar button,
+#botonEditarP button,
+#botonEliminarP button {
+  font-weight: normal;
+  text-align: right;
 }
 
 #iconoBotonImportar,
@@ -105,7 +126,10 @@ button {
 #iconoBotonEliminar,
 #iconoBotonVolver,
 #iconoBotonEditar,
-#iconoBotonBuscar {
+#iconoBotonBuscar,
+#iconoBotonCancelar,
+#iconoBotonEditarP,
+#iconoBotonEliminarP {
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -125,7 +149,10 @@ button {
 #iconoBotonEliminar img,
 #iconoBotonVolver img,
 #iconoBotonEditar img,
-#iconoBotonBuscar img {
+#iconoBotonBuscar img,
+#iconoBotonCancelar img,
+#iconoBotonEditarP img,
+#iconoBotonEliminarP img {
   border-radius: 50%;
   max-width: 25px;
   max-height: 25px;
@@ -137,7 +164,8 @@ button {
 #botonImportar button,
 #botonVerMas button,
 #botonEditar button,
-#botonBuscar button{
+#botonBuscar button,
+#botonEditarP button {
   border-right: 3px solid transparent;
   background-color: #4a7fbd;
 }
@@ -149,7 +177,8 @@ button {
 #iconoBotonImportar,
 #iconoBotonVerMas,
 #iconoBotonEditar,
-#iconoBotonBuscar {
+#iconoBotonBuscar,
+#iconoBotonEditarP {
   background-color: #004aad;
 }
 
@@ -194,13 +223,28 @@ button {
   background-color: #1e7c1d;
 }
 
-#botonEliminar button {
+#botonEliminar button,
+#botonCancelar button,
+#botonEliminarP button {
   border-right: 10px solid transparent;
   background-color: #ff1616;
 }
 
-#iconoBotonEliminar {
+#iconoBotonEliminar,
+#iconoBotonCancelar,
+#iconoBotonEliminarP {
   background-color: #dd3535;
+}
+
+#botonCancelar button{
+  border-right: 3px solid transparent;
+}
+
+#botonEditarP button,
+#botonEliminarP button {
+  border-right: 2px solid transparent;
+  text-align: left;
+  width: 36px;
 }
 
 
