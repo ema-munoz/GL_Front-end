@@ -62,7 +62,7 @@ const routes: Routes = [
   /*Carrer*/
   {path: 'create-carrer', component: CreateCarrerComponent, canActivate:[ExpenseGuard]},
   {path: 'list-carrer', component: ListCarrerComponent, canActivate:[ExpenseGuard]},
-  {path: 'edit-carrer', component: EditCarrerComponent, canActivate:[ExpenseGuard]},
+  {path: 'edit-carrer/:id', component: EditCarrerComponent, canActivate:[ExpenseGuard]},
 
   /*Lab Status*/
   {path: 'create-lab-status', component: CreateLabStatusComponent},

@@ -6,6 +6,7 @@
   left: 20.5%;
   top: 12%;
 }
+
 #tituloGeneral {
   position: absolute;
   right: 580px;
@@ -17,12 +18,14 @@
   top: 20%;
   left: 26%;
 }
+
 #nombre {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
   width: 80%;
 }
+
 #siglas {
   position: absolute;
   top: 42%;
@@ -30,7 +33,8 @@
   width: 80%;
 }
 
-#semestres input[type=text], select {
+#semestres input[type=text],
+select {
   position: absolute;
   top: 70%;
   left: 10%;
@@ -39,18 +43,21 @@
   border-radius: 10px;
   box-sizing: border-box;
 }
-#semestresName{
+
+#semestresName {
   position: absolute;
   top: 62%;
   left: 10%;
   border-radius: 60%;
 }
-#botonGuardar{
+
+#botonGuardar {
   position: absolute;
   left: 550px;
   top: 440px;
 }
-#botonCancelar{
+
+#botonCancelar {
   position: absolute;
   left: 400px;
   top: 440px;

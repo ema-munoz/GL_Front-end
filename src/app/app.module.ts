@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MessagesModule } from "primeng/messages";
+import { MessageModule } from "primeng/message";
 import { CreateSubjectComponent } from './subjects/create-subject/create-subject.component';
 import { ListSubjectComponent } from './subjects/list-subject/list-subject.component';
 
@@ -97,6 +99,8 @@ import { ListLocationComponent } from './location/list-location/list-location.co
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MessagesModule,
+    MessageModule,
     AppRoutingModule
   ],
   providers: [],
