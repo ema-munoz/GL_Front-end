@@ -58,8 +58,6 @@ import { ListLocationComponent } from './location/list-location/list-location.co
 @NgModule({
   declarations: [
     AppComponent,
-    CreateSubjectComponent,
-    ListSubjectComponent,
     HomeComponent,
     ForgotPasswordComponent,
     LoginComponent,

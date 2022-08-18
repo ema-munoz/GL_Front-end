@@ -2,7 +2,6 @@
   <div id="tituloGeneral">
     <h1>Estado Laboratorios</h1>
   </div>
-
 </div>
 
 <div id="botonCrearNuevo">
@@ -24,10 +23,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>.</td>
-        <td></td>
-        <td>
+      <tr *ngFor="let labState of labStatus">
+        <td>{{ labState.id }}</td>
+        <td>{{ labState.state }}</td>
+        <td>{{ labState.description }}</td>
           <div id="botonEditarP">
             <button type="submit">
               <div id="iconoBotonEditarP">
@@ -35,8 +34,6 @@
               </div>E
             </button>
           </div>
-        </td>
-        <td>
           <div id="botonEliminarP">
             <button type="submit">
               <div id="iconoBotonEliminarP">
@@ -44,7 +41,6 @@
               </div>E
             </button>
           </div>
-        </td>
       </tr>
     </tbody>
   </table>
