@@ -41,10 +41,10 @@ export class LoginComponent implements OnInit {
     console.log("Login page: " + this.password);
 
     this.authService.login(this.email, this.password)
-       .subscribe( data => { 
-          console.log("Is Login Success: " + data); 
-    
-         if(data) this.router.navigate(['/home']); 
+       .subscribe( data => {
+          console.log("Is Login Success: " + data);
+
+         if(data) this.router.navigate(['/home']);
     });
  }
 

@@ -57,6 +57,7 @@ import { CreateLocationComponent } from './location/create-location/create-locat
 import { CreateLabAssignamentComponent } from './lab-assignament/create-lab-assignament/create-lab-assignament.component';
 import { EditLabAssignamentComponent } from './lab-assignament/edit-lab-assignament/edit-lab-assignament.component';
 import { ListLabAssignamentComponent } from './lab-assignament/list-lab-assignament/list-lab-assignament.component';
+import { RegisterComponent } from './register/register.component';
 
 
 //import { NavbarComponent } from './navbar/navbar.component';
@@ -100,6 +101,7 @@ import { ListLabAssignamentComponent } from './lab-assignament/list-lab-assignam
     CreateLabAssignamentComponent,
     EditLabAssignamentComponent,
     ListLabAssignamentComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

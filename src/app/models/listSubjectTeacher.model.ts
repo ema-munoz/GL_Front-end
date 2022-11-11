@@ -1,6 +1,3 @@
-import { SubjectModel } from "./subject.model";
-import { TeachersModel } from "./teacher.model";
-
 export interface ListSubjectTeacherModel {
     id?: number;
     course: string;

@@ -49,6 +49,7 @@ import { EditLocationComponent } from './location/edit-location/edit-location.co
 /*lab Assignament*/
 import { ListLabAssignamentComponent } from './lab-assignament/list-lab-assignament/list-lab-assignament.component';
 import { CreateLabAssignamentComponent } from './lab-assignament/create-lab-assignament/create-lab-assignament.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -58,6 +59,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'forgotPassword', component: ForgotPasswordComponent},
+  {path: 'register', component: RegisterComponent},
 
   /* Teachers  */
   {path: 'create-teachers', component: CreateTeachersComponent, canActivate:[ExpenseGuard]},
